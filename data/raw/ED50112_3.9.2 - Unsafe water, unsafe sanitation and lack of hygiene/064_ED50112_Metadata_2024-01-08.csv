@@ -1,0 +1,45 @@
+Property,Value
+Name,Mortality rate attributed to exposure to unsafe WASH services (per 100 000 population)
+Short name,Mortality rate attributed to unsafe WASH services (per 100 000 population)
+Indicator unique identifier,ED50112
+Indicator codes,SDGWSHBOD
+Also known as,SDG indicator 3.9.2
+SDG Goal,"3.9.2 – Unsafe water, unsafe sanitation and lack of hygiene"
+Short description,"Number of deaths from unsafe WASH (Water, sanitation and hygiene) in a year, divided by the population, and multiplied by 100,000."
+Definition,"The mortality rate attributed to unsafe WASH is defined as the number of deaths from unsafe WASH in a year, divided by the population, and multiplied by 100 000. Evidence from epidemiological studies have shown that exposure to unsafe WASH is directly linked to diarrhoeal diseases, intestinal nematode infections and other diseases. Repeated diarrhoea episodes contribute to protein-energy malnutrition. There is also evidence that poor hand hygiene practices are associated with acute respiratory infections. SDG 3.9.2 estimates only include diarrhoea (ICD-10 code A00, A01, A03, A04, A06-A09), intestinal nematode infections (ICD-10 code B76-B77, B79), protein-energy malnutrition (ICD-10 code E40-E46) and acute respiratory infections (ICD-10 codes H65-H66, J00-J22, P23, and U04)."
+Direction of progress,Figures decreasing over time demonstrates progress.
+Framework classifications,Impact
+Indicator status,Actively collected and reported
+Most recent data update,8 January 2024
+Publishing institution,WHO
+Data type,Float
+Unit of measure,"Number of deaths attributable to unsafe water, sanitation and hygeine services (WASH) in a given year"
+Value display label,deaths per 100 000
+Short value display label,deaths per 100k
+Subject of measure,MORTALITY
+Subject of measure sentiment,Negative
+Preferred semantic value type,Rate per 100000
+Confidence intervals,No
+Provenance,Official Estimate
+First available data,31 December 2018
+Most recent available data,31 December 2018
+Data completeness,Complete data
+Temporal coverage,2018 - 2019
+Spatial coverage,World
+Granularity,National
+"Number of countries, areas and territories",183
+Geographic entities and groups,"Afghanistan, Albania, Algeria, Angola, Antigua and Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia (Plurinational State of), Bosnia and Herzegovina, Botswana, Brazil, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Central African Republic, Chad, Chile, China, Colombia, Comoros, Congo, Costa Rica, Côte d'Ivoire, Croatia, Cuba, Cyprus, Czechia, Democratic People's Republic of Korea, Democratic Republic of the Congo, Denmark, Djibouti, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, Greece, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hungary, Iceland, India, Indonesia, Iran (Islamic Republic of), Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Latvia, Lebanon, Lesotho, Liberia, Libya, Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Mauritania, Mauritius, Mexico, Micronesia (Federated States of), Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nepal, Netherlands (the), New Zealand, Nicaragua, Niger, Nigeria, North Macedonia, Norway, Oman, Pakistan, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Republic of Korea, Republic of Moldova, Romania, Russian Federation, Rwanda, Saint Lucia, Saint Vincent and the Grenadines, Samoa, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Sudan, Spain, Sri Lanka, Sudan, Suriname, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Thailand, Timor-Leste, Togo, Tonga, Trinidad and Tobago, Tunisia, Türkiye, Turkmenistan, Uganda, Ukraine, United Arab Emirates, United Kingdom of Great Britain and Northern Ireland, United Republic of Tanzania, United States of America, Uruguay, Uzbekistan, Vanuatu, Venezuela (Bolivarian Republic of), Viet Nam, Yemen, Zambia, Zimbabwe"
+Time intervals,2019
+Method of estimation aggregates,Country estimates of number of deaths by cause are summed to obtain regional and global aggregates. Populations published by the UNPD’s World Population Prospects are aggregated to regional and global levels. The mortality rate is then calculated at the regional and global levels.
+Process of validation,"Draft estimates are reviewed with Member States through a WHO country consultation process and SDG focal points every time new data are generated. In addition, the methods and data are published in a peer-reviewed journal. 2016 estimates were published in 2019 (see 4.c.), and the manuscript for the 2019 estimates presently being submitted is currently under development, with plans for submission to a peer-reviewed journal by April 2022."
+Rationale,"As part of a broader project to assess major risk factors to health, the burden of disease resulting from exposure to unsafe drinking-water, sanitation and hygiene (WASH) was assessed. The share of population using safely managed drinking-water and safely managed sanitation services is addressed in SDG 6: Ensure availability and sustainable management of water and sanitation for all. In low-income countries, inadequate drinking-water, sanitation and hygiene are important risks to health. SDG Target 3.9 aims to substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination.
+The indicator expresses the number of deaths from inadequate water, sanitation and hygiene (with focus on WASH services) which could be prevented by improving those services and practices. It is based on both the WASH service provision in the country, as well as the related health outcomes, and therefore provides important information on the actual disease caused by the risks measured in targets 6.1 and 6.2."
+Denominator,"Data rely on (a) statistics on WASH services (6.1 and 6.2), which are well assessed in almost all countries, and (b) data on deaths. Data on deaths are also widely available from countries from death registration data or sample registration systems, which are certainly feasible systems. Such data are crucial for improving health and reducing preventable deaths in countries. The main limitation is that not all countries do have such registration systems to date, and data need to be completed with other type of information."
+Institutional mandate,"The World Health Organization (WHO) is the Custodian Agency or co-Custodian Agency for reporting on several SDG indicators, including indicator 3.9.2, the mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (exposure to unsafe Water, Sanitation and Hygiene for All (WASH) services)."
+Notes,"Deaths attributable to unsafe water, sanitation and hygiene focusing on inadequate WASH services, expressed per 100,000 population; The included diseases are diarrhoea (GHE code 110 which includes ICD-10 codes A00, A01, A03, A04, A06-A09), acute respiratory infections (GHE code 380 which includes ICD-10 codes H65-H66, J00-J22, P23, and U04) intestinal nematode infections (GHE codes 340, 350 and 360 which include ICD-10 codes B76-B77, and B79) and protein-energy malnutrition (GHE code 550 which includes ICD-10 codes E40-E46)."
+Data collection process,WHO conducts a formal country consultation process before releasing its cause-of-death estimates.
+Preferred data sources,"Data is compiled mainly from country and other databases directly - Civil registration with complete coverage and medical certification of cause of death. To maximize the data for robust estimates, as well as to reduce duplication of data collection to avoid further data reporting burden on countries, complementary data are used from various databases"
+Other data sources,Special studies
+Expected frequency of data collection,Ongoing
+Data providers,"National statistics offices, Various line ministries and databases covering civil registration with complete coverage and medical certification of cause of death."
+Data compilers,World Health Organization (WHO)

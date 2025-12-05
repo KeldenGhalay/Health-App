@@ -1,0 +1,57 @@
+Property,Value
+Name,New HIV infections (per 1000 uninfected population)
+Short name,"HIV infections, new (per 1000 uninfected population)"
+Indicator unique identifier,77D059C
+Indicator codes,SDGHIV
+Also known as,SDG indicator 3.3.1
+SDG Goal,3.3.1 – HIV infections
+Short description,Number of new HIV infections per 1000 uninfected population.
+Definition,"The number of new HIV infections per 1,000 uninfected population, by sex, age and key populations as defined as the number of new HIV infections per 1,000 persons among the uninfected population."
+Direction of progress,Figures decreasing over time demonstrates progress.
+Framework classifications,Impact
+Indicator status,Actively collected and reported
+Most recent data update,26 March 2025
+Next expected data update,2025
+Expected frequency of data release,Annual
+Publishing institution,WHO
+Data type,Float
+Unit of measure,Number of new HIV infections per 1000 uninfected population
+Value display label,infections per 1000
+Short value display label,infections per 1k
+Subject of measure,INCIDENCE
+Subject of measure sentiment,Negative
+Measure context,1C62.3
+Preferred semantic value type,Rate per 1000
+Confidence intervals,Yes
+Provenance,Official Estimate
+First available data,31 December 1989
+Most recent available data,31 December 2020
+Data completeness,Complete data
+Temporal coverage,1989 - 2020
+Periodicity,Annual
+Spatial coverage,World
+Granularity,National
+"Number of countries, areas and territories",172
+Geographic entities and groups,"Afghanistan, Albania, Algeria, Angola, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia (Plurinational State of), Bosnia and Herzegovina, Botswana, Brazil, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Central African Republic, Chad, Chile, China, Colombia, Comoros, Congo, Costa Rica, Côte d'Ivoire, Croatia, Cuba, Cyprus, Czechia, Democratic People's Republic of Korea, Democratic Republic of the Congo, Denmark, Djibouti, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, Greece, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hungary, Iceland, India, Indonesia, Iran (Islamic Republic of), Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Latvia, Lebanon, Lesotho, Liberia, Libya, Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Mauritania, Mauritius, Mexico, Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nepal, Netherlands (the), New Zealand, Nicaragua, Niger, Nigeria, North Macedonia, Norway, Oman, Pakistan, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Republic of Korea, Republic of Moldova, Romania, Russian Federation, Rwanda, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Sierra Leone, Singapore, Slovakia, Slovenia, Somalia, South Africa, South Sudan, Spain, Sri Lanka, Sudan, Suriname, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Thailand, Timor-Leste, Togo, Trinidad and Tobago, Tunisia, Türkiye, Turkmenistan, Uganda, Ukraine, United Arab Emirates, United Kingdom of Great Britain and Northern Ireland, United Republic of Tanzania, United States of America, Uruguay, Uzbekistan, Venezuela (Bolivarian Republic of), Viet Nam, Yemen, Zambia, Zimbabwe"
+Time intervals,"1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023"
+Method of measurement,"Longitudinal data on individuals are the best source of data but are rarely available for large populations. Special diagnostic tests in surveys or from health facilities can be used to obtain data on HIV incidence.Longitudinal data on uninfected individuals are the best source of data but are rarely available for large populations. Special diagnostic tests in population-based surveys or from health facilities can be used to obtain data on HIV incidence but results must be nationally-representative and adjusted for performance of the diagnostic tests. Most countries will rely on modelled estimates using Spectrum, a UNAIDS-supported software tool. To calculate the uninfected population per 1000, the estimate of the number of people living with HIV is subtracted from the previous year’s population estimates produced by the United Nations Population Division."
+Numerator,Number of new HIV infections.
+Denominator,Uninfected population (which is the total population minus people living with HIV).
+Method of estimation aggregates,"Available for the World, the SDG regional groupings, Least Developed Countries, Landlocked Developing Countries and Small Island Developing States."
+Process of validation,"The model development is guided by the UNAIDS Reference Group on Estimates, Modelling and Projections provides technical guidance on the development of the HIV component of the Spectrum software (www.epidem.org).
+The HIV incidence estimates are created by country teams and are signed off on by ministry of health managers, including a clear statement that these data will be provided for SDG reporting. The SDG focal point in country is copied on the requests for clearance. UNAIDS reviews the input data and results to ensure quality before requesting clearance and compiling to regional and global values."
+Rationale,"The number of new infections is important for monitoring both epidemic trends and dynamics within the population. The incidence rate provides a measure of progress toward preventing onward transmission of HIV. Although other indicators are also very important to the HIV epidemic, HIV incidence reflects success in prevention programmes and, to some extent, successful treatment programmes, as those will also lead to lower HIV incidence."
+Denominator,"The methods and limitations for estimating HIV incidence vary based on the data and surveillance systems available in countries.
+- Countries with high HIV prevalence in the general population have relatively strong surveillance systems with household surveys contributing to the information required to estimate incidence. In epidemics concentrated in key populations, the surveillance systems for key hard-to-reach populations are often not comparable over time due to changing survey and sampling methods. The estimated size of key populations, a critical input to the Spectrum model for concentrated epidemics, can also lead to important under or over estimation of HIV incidence in concentrated epidemics.
+- In many countries trends in recent new infections rely on prevalence data from routine antenatal clinic testing. If those data are biased because women with known positive HIV status are not captured when calculating prevalence, or women found to be negative at initial antenatal care visit are retested later in the pregnancy, the derived incidence trends might be biased. While some limitations of the models are reflected in the uncertainty bounds the measurement biases and the uncertainty caused by these biases are not easily quantified and are thus not included.
+- Although HIV prevalence and incidence among children appears to be reasonably robust in generalized epidemics, estimating the pediatric HIV epidemic in concentrated epidemics remains a challenge because no robust measures of fertility exist among key populations living with HIV.
+- Currently UNAIDS only supports the HIV estimates development in countries with populations greater than 250,000. This is primarily due to support capacity at UNAIDS."
+Institutional mandate,"The UN Political Declarations on HIV/AIDS (from 2001, 2011, 2016 and 2021) have mandated for UNAIDS to support countries to produce these data and for UNAIDS to report on the status of the Global HIV epidemic annually as well as through the UN Secretary General."
+Notes,"The Spectrum software is developed by Avenir Health (www.avenirhealth.org)—which includes a module, the Estimates and Projections Package, which is developed by the East-West Center (www.eastwestcenter.org)."
+Data collection process,"Country teams use UNAIDS-supported Spectrum software to develop estimates annually. The country teams are comprised primarily of national epidemiologists, demographers, monitoring and evaluation specialists and technical partners. The model incorporates data that are collected through programme information systems, surveillance and surveys."
+Preferred data sources,"Spectrum modelling is used for the data presented here which incorporates programme data, surveillance data, survey data and region-specific assumptions about the HIV epidemic.
+Longitudinal data on individuals newly infected with HIV would be the most accurate source of data to measure HIV incidence, however these data are rarely available for representative populations. Special diagnostic tests in surveys or from health facilities can also be used to obtain data on HIV incidence but these require very large samples to accurately estimate HIV incidence and the latter are also rarely representative."
+Other data sources,"Alternative methods of measures include household or key population surveys with HIV incidence-testing, or routine surveillance among key populations."
+Expected frequency of data collection,Data sources are compiled all year long. The spectrum models are created in the first three months of every year and finalized by May.
+Data providers,"The estimates are produced by a team of national experts consisting of ministry of health, national AIDS advisory groups and development partners. The results are signed off on by senior managers at the ministries of health."
+Data compilers,"After the data review process, the national experts share their results with UNAIDS who compiles the data for all countries and calculates regional and global estimates."

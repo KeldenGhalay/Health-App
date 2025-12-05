@@ -1,0 +1,38 @@
+Property,Value
+Name,Prevalence of obesity among children and adolescents aged 5 to 19 years
+Short name,Prevalence of obesity  - among children For 5-19 years
+Indicator unique identifier,EF93DDB
+Indicator codes,NCD_BMI_PLUS2C
+Also known as,Childhood obesity
+Short description,Percentage of children and adolescents with a body mass index greater than 2 standard deviation above the median.
+Definition,"The percentage of defined population with a body mass index (BMI) greater than 2 standard deviation above the median, according to the WHO references for school-age children and adolescents."
+Direction of progress,Figures decreasing over time demonstrates progress.
+Framework classifications,Outcome
+Indicator status,Actively collected and reported
+Most recent data update,29 February 2024
+Publishing institution,WHO
+Data type,Float
+Unit of measure,Percentage of children with a body mass index greater than 2 standard deviation above the median
+Value display label,% of children
+Short value display label,%
+Subject of measure,PREVALENCE
+Subject of measure sentiment,Negative
+Preferred semantic value type,Per cent
+Confidence intervals,Yes
+Provenance,Official Estimate
+Calculation type,"Adjusted
+                                                    Predicted"
+First available data,31 December 1974
+Most recent available data,31 December 2015
+Data completeness,Complete data
+Temporal coverage,1974 - 2015
+Periodicity,Annual
+Spatial coverage,World
+Granularity,National
+Population,Children and adolescents (5 to 19 years of age)
+Sample size,2416 population-based measureent studies with 128.9 million participants
+"Number of countries, areas and territories",194
+Geographic entities and groups,"Afghanistan, Albania, Algeria, Andorra, Angola, Antigua and Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia (Plurinational State of), Bosnia and Herzegovina, Botswana, Brazil, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Central African Republic, Chad, Chile, China, Colombia, Comoros, Congo, Cook Islands, Costa Rica, Côte d'Ivoire, Croatia, Cuba, Cyprus, Czechia, Democratic People's Republic of Korea, Democratic Republic of the Congo, Denmark, Djibouti, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, Greece, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hungary, Iceland, India, Indonesia, Iran (Islamic Republic of), Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Latvia, Lebanon, Lesotho, Liberia, Libya, Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Mauritania, Mauritius, Mexico, Micronesia (Federated States of), Monaco, Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nauru, Nepal, Netherlands (the), New Zealand, Nicaragua, Niger, Nigeria, Niue, North Macedonia, Norway, Oman, Pakistan, Palau, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Republic of Korea, Republic of Moldova, Romania, Russian Federation, Rwanda, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Samoa, San Marino, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Sudan, Spain, Sri Lanka, Sudan, Suriname, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Thailand, Timor-Leste, Togo, Tonga, Trinidad and Tobago, Tunisia, Türkiye, Turkmenistan, Tuvalu, Uganda, Ukraine, United Arab Emirates, United Kingdom of Great Britain and Northern Ireland, United Republic of Tanzania, United States of America, Uruguay, Uzbekistan, Vanuatu, Venezuela (Bolivarian Republic of), Viet Nam, Yemen, Zambia, Zimbabwe"
+Time intervals,"1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016"
+Method of measurement,Based on measured height and weight.
+Preferred data sources,Population-based surveys

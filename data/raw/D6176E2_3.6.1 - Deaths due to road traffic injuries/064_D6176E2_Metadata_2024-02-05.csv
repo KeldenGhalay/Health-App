@@ -1,0 +1,48 @@
+Property,Value
+Name,Road traffic mortality rate (per 100 000 population)
+Short name,Road traffic mortality rate (per 100 000 population)
+Indicator unique identifier,D6176E2
+Indicator codes,RS_198
+Also known as,SDG indicator 3.6.1
+SDG Goal,3.6.1 – Deaths due to road traffic injuries
+Short description,"Number of road traffic fatal injury deaths per 100 000 population.
+(SDG 3.6.1)"
+Definition,Estimated road traffic fatal injury deaths per 100 000 population.
+Direction of progress,Figures decreasing over time demonstrates progress.
+Indicator status,Actively collected and reported
+Most recent data update,5 February 2024
+Publishing institution,WHO
+Data type,Float
+Unit of measure,Number of road traffic deaths per 100 000 population
+Value display label,deaths per 100 000
+Short value display label,deaths per 100k
+Subject of measure,MORTALITY
+Subject of measure sentiment,Negative
+Measure context,PD50
+Preferred semantic value type,Rate per 100000
+Confidence intervals,Yes
+Provenance,Official Estimate
+First available data,31 December 1999
+Most recent available data,31 December 2018
+Data completeness,Complete data
+Temporal coverage,1999 - 2018
+Periodicity,Annual
+Spatial coverage,World
+Granularity,National
+"Number of countries, areas and territories",183
+Geographic entities and groups,"Afghanistan, Albania, Algeria, Angola, Antigua and Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia (Plurinational State of), Bosnia and Herzegovina, Botswana, Brazil, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Central African Republic, Chad, Chile, China, Colombia, Comoros, Congo, Costa Rica, Côte d'Ivoire, Croatia, Cuba, Cyprus, Czechia, Democratic People's Republic of Korea, Democratic Republic of the Congo, Denmark, Djibouti, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, Greece, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hungary, Iceland, India, Indonesia, Iran (Islamic Republic of), Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Latvia, Lebanon, Lesotho, Liberia, Libya, Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Mauritania, Mauritius, Mexico, Micronesia (Federated States of), Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nepal, Netherlands (the), New Zealand, Nicaragua, Niger, Nigeria, North Macedonia, Norway, Oman, Pakistan, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Republic of Korea, Republic of Moldova, Romania, Russian Federation, Rwanda, Saint Lucia, Saint Vincent and the Grenadines, Samoa, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Sudan, Spain, Sri Lanka, Sudan, Suriname, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Thailand, Timor-Leste, Togo, Tonga, Trinidad and Tobago, Tunisia, Türkiye, Turkmenistan, Uganda, Ukraine, United Arab Emirates, United Kingdom of Great Britain and Northern Ireland, United Republic of Tanzania, United States of America, Uruguay, Uzbekistan, Vanuatu, Venezuela (Bolivarian Republic of), Viet Nam, Yemen, Zambia, Zimbabwe"
+Time intervals,"2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019"
+Numerator,"Estimated number of deaths due to road traffic crashes.
+Absolute figure indicating the number of people who die as a result of a road traffic crash."
+Denominator,Population (number of people by country)
+Denominator source,Data from the United Nations / Department of Economic and Social Affairs/ Population division
+Method of estimation aggregates,Country estimates of number of deaths by cause are summed to obtain regional and global aggregates.
+Process of validation,The number of deaths due to road injury were country consulted with country designated focal points (usually at the Ministry of Health or National Statistics Office) as part of the full set of causes of death prior to the release.
+Rationale,"Road traffic injuries remain an important public health problem, particularly for low-income and middle-income countries."
+Denominator,There are no vital registration data for all countries to make comparison against the data received on the survey. Also we cannot collect road traffic data every year using this methodology outlined in the Global status report.
+Institutional mandate,"According to Article 64 of its constitution, WHO is mandated to request each Member State to provide statistics on mortality. Furthermore, the WHO Nomenclature Regulations of 1967 affirms the importance of compiling and publishing statistics of mortality and morbidity in comparable form. Member States started to report mortality data to WHO since the early fifties and this reporting activity is continuing until today."
+Data collection process,"The methodology involved collecting data from a number of different sectors and stakeholders in each country is as follows. National Data Coordinators (NDCs), who were nominated by their governments, were trained in the project methodology. As representatives of their ministries, they were required to identify up to eight other road safety experts within their country from different sectors (e.g. health, police, transport, nongovernmental organizations and/or academia) and to facilitate a consensus meeting of these respondents. While each expert responded to the questionnaire based on their expertise, the consensus meeting facilitated by NDCs allowed for discussion of all responses, and the group used this discussion to agree on one final set of information that best represented their country’s situation at the time (up to 2014, using the most recent data available). This was then submitted to the World Health Organization (WHO). More details are in the Global Status Report on Road Safety 2018 and the WHO methods and data sources for global causes of death, 2000–2019."
+Preferred data sources,For the road traffic deaths we have two sources of data. Data from Global Status Report on Road Safety survey and Vital registration or certificate deaths data that WHO receive every year from member states (ministries of health).
+Expected frequency of data collection,WHO annually requests tabulated death registration data (including all causes of death) from Member States. Countries may submit annual cause-of-death statistics to WHO on an ongoing basis.
+Data providers,"The road traffic deaths data were provided nationally by mainly three ministries, namely, ministry of health, ministry of interior and ministry of transport."
+Data compilers,WHO is the organization responsible for compilation and reporting on this indicator at the global level.

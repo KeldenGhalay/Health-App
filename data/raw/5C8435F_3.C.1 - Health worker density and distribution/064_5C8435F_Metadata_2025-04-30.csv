@@ -1,0 +1,52 @@
+Property,Value
+Name,Density of nursing and midwifery personnel (per 10 000 population)
+Short name,Density of nursing and midwifery personnel (per 10 000 population)
+Indicator unique identifier,5C8435F
+Indicator codes,HWF_0006
+Also known as,SDG indicator 3.c.1
+SDG Goal,3.C.1 – Health worker density and distribution
+Short description,"Number of nursing and midwifery personnel (per 10 000 population) including nursing personnel and midwifery personnel.
+(SDG 3.c.1)"
+Definition,"The number of nursing and midwifery personnel includes nursing personnel and midwifery personnel in the given national and/or subnational area. Depending on the nature of the original data source may include practising (active) nursing and midwifery personnel only or all registered nursing and midwifery personnel.
+The ISCO-08 codes included here are 2221, 2222, 3221 and 3222."
+Direction of progress,Figures increasing over time demonstrates progress.
+Indicator status,Actively collected and reported
+Most recent data update,30 April 2025
+Publishing institution,WHO_HQ_UHL_HWF
+Data type,Float
+Unit of measure,Number of nurses and midwifery personnel per 10 000
+Value display label,per 10 000 population
+Short value display label,per 10k
+Subject of measure,PERFORMANCE
+Subject of measure sentiment,Positive
+Measure context,"ISCO08-222, ISCO08-322"
+Preferred semantic value type,Rate per 10000
+Confidence intervals,No
+Provenance,"Country, Territory or Area Reported"
+Calculation type,Adjusted
+First available data,31 December 1989
+Most recent available data,31 December 2020
+Data completeness,Incomplete data
+Temporal coverage,1989 - 2020
+Periodicity,Annual
+Spatial coverage,World
+Granularity,National
+"Number of countries, areas and territories",195
+Geographic entities and groups,"Afghanistan, Albania, Algeria, Andorra, Angola, Antigua and Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia (Plurinational State of), Bosnia and Herzegovina, Botswana, Brazil, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Central African Republic, Chad, Chile, China, Colombia, Comoros, Congo, Cook Islands, Costa Rica, Côte d'Ivoire, Croatia, Cuba, Cyprus, Czechia, Democratic People's Republic of Korea, Democratic Republic of the Congo, Denmark, Djibouti, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, Greece, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hungary, Iceland, India, Indonesia, Iran (Islamic Republic of), Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Latvia, Lebanon, Lesotho, Liberia, Libya, Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Mauritania, Mauritius, Mexico, Micronesia (Federated States of), Monaco, Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nauru, Nepal, Netherlands (the), New Zealand, Nicaragua, Niger, Nigeria, Niue, North Macedonia, Norway, occupied Palestinian territory, including east Jerusalem, Oman, Pakistan, Palau, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Republic of Korea, Republic of Moldova, Romania, Russian Federation, Rwanda, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Samoa, San Marino, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Sudan, Spain, Sri Lanka, Sudan, Suriname, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Thailand, Timor-Leste, Togo, Tonga, Trinidad and Tobago, Tunisia, Türkiye, Turkmenistan, Tuvalu, Uganda, Ukraine, United Arab Emirates, United Kingdom of Great Britain and Northern Ireland, United Republic of Tanzania, United States of America, Uruguay, Uzbekistan, Vanuatu, Venezuela (Bolivarian Republic of), Viet Nam, Yemen, Zambia, Zimbabwe"
+Time intervals,"1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021"
+Numerator,Number of nursing and midwifery personnel
+Denominator,National population estimates
+Denominator source,United Nations Population Division's World Population Prospects database
+Method of estimation aggregates,"The global average density was estimated as the population weighted average of the national densities. For the regional average density, data for the countries with missing values, if any in the last 5 years were first estimated with neighbouring comparable countries. Then the regional average was also computed as a weighted average by pooling these estimated values plus the available national densities. The population for estimating densities at regional and global level are based on the latest available estimates from the UN Population Division."
+Process of validation,The data recorded in the NHWA data platform is validated by country focal points. Data quality checks and country consultation are employed.
+Rationale,"The SDG agenda gives recognition to UHC as key to achieving all other health targets. SDG 3c sets a target to ""substantially increase health financing and the recruitment, development, training and retention of the health workforce in developing countries, especially in least developed countries and small island developing States."" WHO and its partners developed the Global Strategy on Human Resources for Health: Workforce 2030 (GSHRH) to accelerate progress towards UHC and the SDGs by ensuring equitable access to health workers within strengthened health systems. Resolution (WHA69.19) urges Member States to consolidate a core set of HRH data with annual reporting to the Global Health Observatory, as well as progressive implementation of National Health Workforce Accounts to support national policy and planning and the GSHRH's monitoring and accountability framework."
+Denominator,"Data on health workers tend to be more complete for the public health sector and may underestimate the active workforce in the private, military, nongovernmental organization and faith-based health sectors. In many cases, information maintained at the national regulatory bodies and professional councils is not updated.
+As data is not always published annually for each country, the latest available data has been used. Due to the differences in data sources, considerable variability remains across countries in the coverage, periodicity, quality and completeness of the original data."
+Institutional mandate,"The Global Strategy for Human Resources for Health: 2030 agenda and the progressive implementation of NHWA adopted in Sixty-ninth World Health Assembly (WHA69.19). WHA69.19 urges Member States to share health workforce data to WHO, to increase the evidence base on health workforce statistics globally."
+Associated resolutions,WHA69.19
+Data collection process,"Countries are encouraged to adopt a progressive NHWA implementation approach building on multi-stakeholder engagement at national and sub-national levels. National focal points share the data with WHO through the online NHWA data platform. The platform hosted in WHO, is built to facilitate data reporting on the indicators listed in the NHWA Handbook and data sharing across all the 3 levels of WHO."
+Preferred data sources,"In response to the Sixty-ninth World Health Assembly (WHA69.19), an online National Health Workforce Accounts (NHWA) data platform was developed to facilitate national reporting. In addition to the reporting, the platform also serves as an analytical tool at the national/regional and global levels. Since Its launch in November 2017, Member States are called to use the NHWA data platform to report health workforce data."
+Other data sources,"Complementing the national reporting through the NHWA data platform, additional sources such as the National Census, Labour Force Surveys and key administrative national and regional sources are also employed. Most of the data from administrative sources are derived from published national health sector reviews and/or official country reports to WHO offices."
+Expected frequency of data collection,Continuous
+Data providers,NHWA focal points at national level.
+Data compilers,World Health Organization (WHO)

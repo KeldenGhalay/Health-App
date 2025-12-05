@@ -1,0 +1,56 @@
+Property,Value
+Name,Age-standardized prevalence of tobacco use among persons 15 years and older (%)
+Short name,Age-standardized prevalence of tobacco smoking among persons 15 years and older  (%)
+Indicator unique identifier,75DDA77
+Indicator codes,M_Est_tob_curr_std
+Also known as,SDG indicator 3.a.1
+SDG Goal,3.A.1 – Age–standardized prevalence of tobacco use
+Short description,"Percentage of the population aged 15 years and over who currently use any tobacco product on a daily or non-daily basis.
+(SDG 3.a.1)"
+Definition,"The percentage of the population aged 15 years and over who currently use any tobacco product (smoked and/or smokeless tobacco) on a daily or non-daily basis.
+Tobacco products include cigarettes, pipes, cigars, cigarillos, waterpipes (hookah, shisha), bidis, kretek, heated tobacco products, and all forms of smokeless (oral and nasal) tobacco.
+Tobacco products exclude e-cigarettes (which do not contain tobacco), “e-cigars”, “e-hookahs”, JUUL and “e-pipes”."
+Direction of progress,Figures decreasing over time demonstrates progress and will make a large contribution to reducing premature mortality from non-communicable diseases (NCDs).
+Indicator status,Actively collected and reported
+Most recent data update,17 January 2024
+Next expected data update,2024
+Expected frequency of data release,Every 2 years (biennial)
+Data release notes,"Biennial release via the WHO Global Report on Trends in Tobacco Use 2000-2025, the WHO Global Health Observatory and the Implementation Database of the WHO FCTC."
+Publishing institution,WHO_HQ_HEP_HPR_TFI
+Data type,Float
+Unit of measure,Percentage of the population aged 15 years and over who currently use any tobacco product on a daily or non-daily basis
+Value display label,% of population
+Short value display label,%
+Subject of measure,POPULATION
+Subject of measure sentiment,Negative
+Preferred semantic value type,Percentage of population
+Confidence intervals,No
+Provenance,Official Estimate
+Calculation type,Predicted
+First available data,31 December 1999
+Most recent available data,31 December 2024
+Data completeness,Complete data
+Temporal coverage,1999 - 2024
+Spatial coverage,World
+Granularity,National
+Population,Population aged 15 years and over.
+"Number of countries, areas and territories",164
+Geographic entities and groups,"Afghanistan, Albania, Algeria, Andorra, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bolivia (Plurinational State of), Bosnia and Herzegovina, Botswana, Brazil, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Chad, Chile, China, Colombia, Comoros, Congo, Cook Islands, Costa Rica, Côte d'Ivoire, Croatia, Cuba, Cyprus, Czechia, Democratic People's Republic of Korea, Democratic Republic of the Congo, Denmark, Dominican Republic, Ecuador, Egypt, El Salvador, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Finland, France, Gambia, Georgia, Germany, Ghana, Greece, Guatemala, Guinea-Bissau, Guyana, Haiti, Hungary, Iceland, India, Indonesia, Iran (Islamic Republic of), Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Latvia, Lebanon, Lesotho, Liberia, Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Mauritania, Mauritius, Mexico, Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nauru, Nepal, Netherlands (the), New Zealand, Niger, Nigeria, Norway, Oman, Pakistan, Palau, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Republic of Korea, Republic of Moldova, Romania, Russian Federation, Rwanda, Samoa, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, South Africa, Spain, Sri Lanka, Sweden, Switzerland, Thailand, Timor-Leste, Togo, Tonga, Tunisia, Türkiye, Turkmenistan, Tuvalu, Uganda, Ukraine, United Kingdom of Great Britain and Northern Ireland, United Republic of Tanzania, United States of America, Uruguay, Uzbekistan, Vanuatu, Viet Nam, Yemen, Zambia, Zimbabwe"
+Time intervals,"2000, 2005, 2010, 2015, 2018, 2019, 2020, 2023, 2025"
+Numerator,Population aged 15 years and over who currently use any tobacco product (smoked and/or smokeless tobacco) on a daily or non-daily basis
+Denominator,National population estimates; population aged 15 years and over.
+Method of estimation aggregates,"Average prevalence rates for regions are calculated by population-weighting the age-specific prevalence rates in countries, then age-standardizing the age-specific average rates of the region. Countries where no estimate can be calculated are included in regional and global averages by assuming their prevalence rates for men and women are equal to the average rates for men and women seen in the UN subregion1 in which they are located. Where fewer than 50% of a UN subregion’s population was surveyed, UN subregions are grouped with neighbouring subregions until at least 50% of the grouped population has contributed data to the region’s average rates."
+Process of validation,"The results of the modelling are compared with the input data to assure a good model fit. The results and input data are shared with countries via the tobacco control focal point for country consultation prior to publication in the biennial reports WHO global report on trends in tobacco use 2000-2025 and WHO Report on the Global Tobacco Epidemic. During country consultation, sometimes additional data are made available to WHO by the country for the purposes of modelling indicator 3.a.1."
+Rationale,"Tobacco use is a major contributor to illness and death from non-communicable diseases (NCDs). There is no proven safe level of tobacco use or of second-hand smoke exposure. All daily and non-daily users of tobacco are at risk of a variety of poor health outcomes across the life-course, including NCDs. Reducing the prevalence of current tobacco use will make a large contribution to reducing premature mortality from NCDs. Routine and regular monitoring of this indicator is necessary to enable accurate monitoring and evaluation of the impact of implementation of the WHO Framework Convention on Tobacco Control (WHO FCTC), or tobacco control policies in the countries that are not yet Parties to the WHO FCTC, over time."
+Denominator,"Estimates for countries with irregular surveys or many data gaps will have large uncertainty ranges, and such results should be interpreted with caution.
+Raw data collected through nationally representative population-based surveys in the countries are used to calculate comparable estimates for this indicator. Information from subnational surveys are not used.
+In some countries, all tobacco use and tobacco smoking may be equivalent, but for many countries where other forms of tobacco are also being consumed, smoking rates will be lower than tobacco use rates to some degree.
+The comparability, quality and frequency of household surveys affects the accuracy and quality of the estimates. Non-comparability of data can arise from the use of different survey instruments, sampling and analysis methods, and indicator definitions across Member States. Surveys may cover a variety of age ranges (not always 15+) and be repeated at irregular intervals. Surveys may include a variety of different tobacco products, or sometimes only one product such as cigarettes, based on the country’s perception of which products are important to monitor. Unless both smoked and smokeless products are monitored simultaneously, tobacco use prevalence will be underreported. Countries have begun to monitor use of e-cigarettes and other emerging products, which may confound countries’ definitions of tobacco use. The definition of current use may not always be restricted to the 30 days prior to the survey. In addition, surveys ask people to self-report their tobacco use, which can lead to under-reporting of tobacco use.
+There is no standard protocol used across Member States to ask people about their tobacco use. WHO’s Tobacco Questions for Surveys (TQS) have been adopted in many surveys, which helps improve comparability of indicators across countries."
+Institutional mandate,"The WHO Framework Convention on Tobacco Control (WHO FCTC) was adopted by the World Health Assembly on 21 May 2003 (Resolution 56.1) and entered into force on 27 February 2005. In 2010, Conference of the Parties adopted Decision FCTC/COP4(16), which requests the Convention Secretariat, in cooperation with competent authorities within WHO, in particular the Tobacco Free Initiative, to further standardize definitions and indicators and facilitate regular review of progress in implementation of the Convention."
+Associated resolutions,WHA56.1
+Data collection process,"Reports are either downloaded from websites, submitted through the WHO FCTC reporting platform or emailed by national counterparts."
+Preferred data sources,Population-based surveys
+Expected frequency of data collection,Continuous
+Data providers,"WHO Member States, Parties to the WHO FCTC."
+Data compilers,"WHO Tobacco Free Initiative, Secretariat of the WHO Framework Convention on Tobacco Control and the Protocol to Eliminate Illicit Trade in Tobacco Products"

@@ -1,0 +1,51 @@
+Property,Value
+Name,Probability of premature mortality from NCDs
+Short name,"Probability of dying from any of CVD, cancer, diabetes, CRD between age 30 and exact age 70 (%)"
+Indicator unique identifier,1F96863
+Indicator codes,NCDMORT3070
+Also known as,"SDG indicator 3.4.1
+                                                     Mortality rate attributed to cardiovascular disease
+                                                     cancer
+                                                     diabetes or chronic respiratory disease
+                                                     Risk of premature death from target NCDs"
+SDG Goal,"3.4.1 – cardiovascular disease, cancer, diabetes or chronic respiratory disease"
+Short description,"Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular diseases, cancer, diabetes, or chronic respiratory diseases (SDG indicator 3.4.1)"
+Definition,"The percentage of 30-year-old people who would die before their 70th birthday from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease, assuming that they would experience current mortality rates at every age and they would not die from any other cause of death (e.g., injuries or HIV/AIDS)."
+Direction of progress,Figures decreasing over time demonstrates progress.
+Framework classifications,Impact
+Indicator status,Actively collected and reported
+Most recent data update,18 December 2024
+Next expected data update,2023/2024
+Expected frequency of data release,Every 2 - 3 years
+Publishing institution,WHO
+Data type,Float
+Unit of measure,Percentage of 30-year-old people who would die before their 70th birthday from non-communicable diseases
+Value display label,% of 30 year olds
+Short value display label,%
+Subject of measure,MORTALITY
+Subject of measure sentiment,Negative
+Measure context,"ICD10-I00-199, ICD10-C00-C97, ICD10-E10-E14, ICD10-J30-J98"
+Preferred semantic value type,Per cent
+Confidence intervals,Yes
+Provenance,Official Estimate
+Calculation type,"Adjusted
+                                                    Predicted"
+First available data,31 December 1999
+Most recent available data,31 December 2018
+Data completeness,Complete data
+Temporal coverage,1999 - 2018
+Periodicity,Annual
+Spatial coverage,World
+Granularity,National
+"Number of countries, areas and territories",183
+Geographic entities and groups,"Afghanistan, Albania, Algeria, Angola, Antigua and Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia (Plurinational State of), Bosnia and Herzegovina, Botswana, Brazil, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Central African Republic, Chad, Chile, China, Colombia, Comoros, Congo, Costa Rica, Côte d'Ivoire, Croatia, Cuba, Cyprus, Czechia, Democratic People's Republic of Korea, Democratic Republic of the Congo, Denmark, Djibouti, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, Greece, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hungary, Iceland, India, Indonesia, Iran (Islamic Republic of), Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Latvia, Lebanon, Lesotho, Liberia, Libya, Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Mauritania, Mauritius, Mexico, Micronesia (Federated States of), Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nepal, Netherlands (the), New Zealand, Nicaragua, Niger, Nigeria, North Macedonia, Norway, Oman, Pakistan, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Republic of Korea, Republic of Moldova, Romania, Russian Federation, Rwanda, Saint Lucia, Saint Vincent and the Grenadines, Samoa, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Sudan, Spain, Sri Lanka, Sudan, Suriname, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Thailand, Timor-Leste, Togo, Tonga, Trinidad and Tobago, Tunisia, Türkiye, Turkmenistan, Uganda, Ukraine, United Arab Emirates, United Kingdom of Great Britain and Northern Ireland, United Republic of Tanzania, United States of America, Uruguay, Uzbekistan, Vanuatu, Venezuela (Bolivarian Republic of), Viet Nam, Yemen, Zambia, Zimbabwe"
+Time intervals,"2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019,2020,2021"
+Process of validation,WHO conducts a formal country consultation process before releasing its cause-of-death estimates. The number of deaths were country consulted with country designated focal points (usually at the Ministry of Health or National Statistics Office) as part of the full set of causes of death prior to the release.
+Rationale,"Disease burden from non-communicable diseases (NCDs) among adults - the most economically productive age span - is rapidly increasing in developing countries due to ageing and health transitions. Measuring the risk of dying from target NCDs is important to assess the extent of burden from mortality due NCDs in a population. This indicator has been selected to measure NCD mortality for the ""25 by 25"" NCD mortality target"
+Denominator,"Cause of death estimates have large uncertainty ranges for some causes and some regions. Data gaps and limitations in high-mortality regions reinforce the need for caution when interpreting global comparative cause of death assessments, as well as the need for increased investment in population health measurement systems. The use of verbal autopsy methods in sample registration systems, demographic surveillance systems and household surveys provides some information on causes of death in populations without well-functioning death registration systems, but there remain considerable challenges in the validation and interpretation of such data, and in the assessment of uncertainty associated with diagnoses of underlying cause of death."
+Institutional mandate,"According to Article 64 of its constitution, WHO is mandated to request each Member State to provide statistics on mortality. Furthermore, the WHO Nomenclature Regulations of 1967 affirms the importance of compiling and publishing statistics of mortality and morbidity in comparable form. Member States started to report mortality data to WHO since the early fifties and this reporting activity is continuing until today."
+Preferred data sources,The preferred data source is death registration systems with complete coverage and medical certification of cause of death.
+Other data sources,"household surveys with verbal autopsy, and sample or sentinel registration systems."
+Expected frequency of data collection,Annual
+Data providers,National statistics offices and/or ministries of health.
+Data compilers,World Health Organization (WHO)

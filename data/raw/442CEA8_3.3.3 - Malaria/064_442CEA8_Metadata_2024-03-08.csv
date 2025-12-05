@@ -1,0 +1,64 @@
+Property,Value
+Name,Malaria incidence (per 1000 population at risk)
+Short name,Estimated malaria incidence (per 1000 population at risk)
+Indicator unique identifier,442CEA8
+Indicator codes,MALARIA_EST_INCIDENCE
+Also known as,SDG indicator 3.3.3
+SDG Goal,3.3.3 – Malaria
+Short description,"Number of new malaria cases per 1000 population at risk per year.
+(SDG 3.3.3)"
+Definition,"The number of new malaria cases per 1000 population at risk per year.
+Population at risk is defined as population living in areas where malaria transmission occurs."
+Direction of progress,Figures decreasing over time demonstrates progress.
+Framework classifications,"Health status
+                                                        Impact"
+Indicator status,Actively collected and reported
+Most recent data update,8 March 2024
+Next expected data update,2023
+Expected frequency of data release,Annual
+Publishing institution,WHO
+Data type,Float
+Unit of measure,Number of new malaria cases per 1000 population at risk
+Value display label,cases per 1000
+Short value display label,cases per 1k
+Subject of measure,INCIDENCE
+Subject of measure sentiment,Negative
+Measure context,ICD11-1F4Z
+Preferred semantic value type,Rate per 1000
+Confidence intervals,Yes
+Provenance,Official Estimate
+Calculation type,Adjusted
+First available data,31 December 1999
+Most recent available data,31 December 2020
+Data completeness,Complete data
+Temporal coverage,1999 - 2020
+Periodicity,Annual
+Spatial coverage,World
+Granularity,National
+Population,"The population at risk of malaria, defined as population living in areas where malaria transmission occurs."
+"Number of countries, areas and territories",194
+Geographic entities and groups,"Afghanistan, Albania, Algeria, Andorra, Angola, Antigua and Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia (Plurinational State of), Bosnia and Herzegovina, Botswana, Brazil, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Central African Republic, Chad, Chile, China, Colombia, Comoros, Congo, Cook Islands, Costa Rica, Côte d'Ivoire, Croatia, Cuba, Cyprus, Czechia, Democratic People's Republic of Korea, Democratic Republic of the Congo, Denmark, Djibouti, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, Greece, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hungary, Iceland, India, Indonesia, Iran (Islamic Republic of), Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Latvia, Lebanon, Lesotho, Liberia, Libya, Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Mauritania, Mauritius, Mexico, Micronesia (Federated States of), Monaco, Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nauru, Nepal, Netherlands (the), New Zealand, Nicaragua, Niger, Nigeria, Niue, North Macedonia, Norway, Oman, Pakistan, Palau, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Republic of Korea, Republic of Moldova, Romania, Russian Federation, Rwanda, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Samoa, San Marino, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Sudan, Spain, Sri Lanka, Sudan, Suriname, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Thailand, Timor-Leste, Togo, Tonga, Trinidad and Tobago, Tunisia, Türkiye, Turkmenistan, Tuvalu, Uganda, Ukraine, United Arab Emirates, United Kingdom of Great Britain and Northern Ireland, United Republic of Tanzania, United States of America, Uruguay, Uzbekistan, Vanuatu, Venezuela (Bolivarian Republic of), Viet Nam, Yemen, Zambia, Zimbabwe"
+Time intervals,"2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021"
+Method of measurement,"Complete data on malaria cases reported through surveillance systems are the best source of data but are rarely available for large populations at high quality and accuracy. Reported data on malaria cases generally need to be adjusted for extent of health service use (treatment seeking), underreporting and lack of case confirmation (the likelihood that cases are parasite positive). WHO compiles data on reported confirmed cases of malaria and suspected cases tested with microscopy or RDT, submitted by national malaria control programmes. Underreporting is reported or estimated by countries. The extent of health service use (treatment seeking) data were obtained from nationally representative household surveys on health service use."
+Numerator,Number of new malaria cases
+Denominator,Population living in areas where malaria transmission occurs.
+Method of estimation aggregates,Global and regional coverage is a weighted sum of WHO/UNICEF estimates of national coverage by target population from the United Nations Population Division's World Population Prospects. The size of the target population is the national annual number of infants surviving their first year of life.
+Process of validation,Burden estimates presented in the World Malaria Report are sent to the countries via regional offices for consultation and approval.
+Rationale,"To measure trends in malaria morbidity and to identify locations where the risk of disease is highest. With this information, programmes can respond to unusual trends, such as epidemics, and direct resources to the populations most in need. These data also serves to inform global resource allocation for malaria such as when defining eligibility criteria for Global Fund finance."
+Institutional mandate,"The Global technical strategy and targets for malaria 2016–2030 was adopted by The 68 World Health
+Assembly. The Assembly requested WHO to monitor the progress toward the
+GTS milestones and targets. The World Malaria Report is the process by which the GTS is monitored by
+country, WHO region and globally."
+Associated resolutions,"WHA74.9
+                                                WHA68.2"
+Comments,"The estimated incidence can differ from the incidence reported by a Ministry of Health which can be affected by: 
+• the completeness of reporting: the number of reported cases can be lower than the estimated cases if the percentage of health facilities reporting in a month is less than 100%
+• the extent of malaria diagnostic testing (the number of slides examined or RDTs performed)
+• the use of private health facilities which are usually not included in reporting systems.
+• the indicator is estimated only where malaria transmission occurs."
+Notes,"Method described in the World Malaria Report 2022, pages 208-212."
+Data collection process,"Cases reported by the NMCP are obtained from each country surveillance system. This include among others information on the number of suspected cases, number of tested cases, number of positive cases by method of detection and by species as well as number of health facilities that report those cases. This information is summarized in a DHIS2 application developed for this purpose. Data for representative household surveys are publicly available and included National Demographic Household Surveys (DHS) or Malaria Indicator Survey (MIS)."
+Preferred data sources,Surveillance systems
+Expected frequency of data collection,Annual
+Data providers,The National Malaria Control Program is the responsible to collect the information at each country.
+Data compilers,"The Surveillance, Monitoring and Evaluation Unit of the Global Malaria Control Programme is the responsible to compile and process all the relevant information. National estimates for some countries are estimated in collaboration with the Malaria Atlas Project which has been designated a WHO collaborating centre in geospatial disease modelling."

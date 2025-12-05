@@ -1,0 +1,6 @@
+TERM_SET,TERM_KEY,TERM_NAME_MAIN,TERM_DESC_MAIN
+DIM_SEX,FEMALE,Female,Used for biological females.
+DIM_SEX,MALE,Male,Used for biological males.
+DIM_SEX,TOTAL,Total,Used for expressing totals.
+DIM_SEX,NULL_U,Unknown,Used for persons to whom statistics are attributed when their sex is unknown.
+DIM_SEX,NULL_Z,Not applicable,Used when DIM_SEX is not applicable to the subject being measured.

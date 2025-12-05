@@ -1,0 +1,65 @@
+Property,Value
+Name,Tuberculosis incidence (per 100 000 population)
+Short name,Tuberculosis incidence (per 100 000 population)
+Indicator unique identifier,C288D13
+Indicator codes,"MDG_0000000020
+                                                    20
+                                                    SDG Indicator 3.3.2
+                                                    1426"
+Also known as,"SDG indicator 3.3.2
+                                                     Estimated incidence of tuberculosis
+                                                     Estimated incidence of tuberculosis (per 100 000 population)
+                                                     Number of incident tuberculosis cases"
+SDG Goal,3.3.2 – Tuberculosis
+Short description,"Number of new tuberculosis (TB) cases arising in a given year per 100 000 population.
+(SDG 3.3.2)"
+Definition,"The estimated number of new and relapse tuberculosis (TB) cases arising in a given year. All forms of TB are included, including cases in people living with HIV. Published values are rounded to two significant figures. Uncertainty bounds are provided in addition to best estimates."
+Direction of progress,Figures decreasing over time demonstrate progress in national health systems.
+Framework classifications,Impact
+Indicator status,Actively collected and reported
+Most recent data update,8 January 2024
+Next expected data update,2024
+Expected frequency of data release,Annual
+Publishing institution,WHO_HQ_UCN_GTB
+Data type,Float
+Unit of measure,Number of TB cases per year per 100 000 population.
+Value display label,cases per 100 000
+Short value display label,cases per 100k
+Subject of measure,INCIDENCE
+Subject of measure sentiment,Negative
+Measure context,ICD11-1B1Z
+Preferred semantic value type,Rate per 100000
+Confidence intervals,Yes
+Confidence interval type,The indicator uses a methodology of BETA distribution at 95%.
+Provenance,Official Estimate
+Calculation type,Adjusted
+First available data,31 December 1999
+Most recent available data,31 December 2020
+Data completeness,Complete data
+Temporal coverage,1999 - 2020
+Periodicity,Annual
+Spatial coverage,World
+Granularity,National
+"Number of countries, areas and territories",194
+Geographic entities and groups,"Afghanistan, Albania, Algeria, Andorra, Angola, Antigua and Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia (Plurinational State of), Bosnia and Herzegovina, Botswana, Brazil, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Central African Republic, Chad, Chile, China, Colombia, Comoros, Congo, Cook Islands, Costa Rica, Côte d'Ivoire, Croatia, Cuba, Cyprus, Czechia, Democratic People's Republic of Korea, Democratic Republic of the Congo, Denmark, Djibouti, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, Greece, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hungary, Iceland, India, Indonesia, Iran (Islamic Republic of), Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Latvia, Lebanon, Lesotho, Liberia, Libya, Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Mauritania, Mauritius, Mexico, Micronesia (Federated States of), Monaco, Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nauru, Nepal, Netherlands (the), New Zealand, Nicaragua, Niger, Nigeria, Niue, North Macedonia, Norway, Oman, Pakistan, Palau, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Republic of Korea, Republic of Moldova, Romania, Russian Federation, Rwanda, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Samoa, San Marino, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Sudan, Spain, Sri Lanka, Sudan, Suriname, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Thailand, Timor-Leste, Togo, Tonga, Trinidad and Tobago, Tunisia, Türkiye, Turkmenistan, Tuvalu, Uganda, Ukraine, United Arab Emirates, United Kingdom of Great Britain and Northern Ireland, United Republic of Tanzania, United States of America, Uruguay, Uzbekistan, Vanuatu, Venezuela (Bolivarian Republic of), Viet Nam, Yemen, Zambia, Zimbabwe"
+Time intervals,"2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021"
+Numerator,Number of new and relapse tuberculosis (TB) cases arising in a given year
+Denominator,Total population
+Method of estimation aggregates,"Estimates are also produced at global level, for WHO regions and for World Bank Income Groups. For methodology, see Annex 1 of the WHO global tuberculosis control report"
+Process of validation,"Estimates of TB burden are prepared in July-August and shared with countries for review. In selected countries with new survey data, estimates are updated separately during the year. All estimates are communicated in August-September and revisions are made based on feedback. The final set of estimates is reviewed in WHO before publication in October, for compliance with specific international standards and harmonization of breakdowns for age and sex groups."
+Rationale,"Incidence (cases arising in a given time period, usually one year) gives an indication of the burden of TB in a population, and of the size of the task faced by a national TB control programme. Incidence can change as the result of changes in transmission (the rate at which people become infected with Mycobacterium tuberculosis), or changes in the rate at which people infected with Mycobacterium tuberculosis develop TB disease (e.g. as a result of changes in nutritional status or of HIV infection). Because TB can develop in people who became infected many years previously, the effect of TB control on incidence is less rapid than the effect on prevalence or mortality. Target 6.c of the Millenium development Goals is to ""have halted by 2015 and begun to reverse the incidence of malaria and other major diseases"". Indicator 6.9 is defined as ""incidence, prevalence and death rates associated with TB""."
+Institutional mandate,Several World Health Organization resolutions endorsed by Member States at different World Health Assemblies have given the World Health Organization responsibility for monitoring the burden of TB globally and reporting on the response.
+Associated resolutions,"WHA 67.11
+                                                WHA 62.15
+                                                WHA 58.14
+                                                WHA 60.19
+                                                WHA 44.8
+                                                WHA 53.1"
+Comments,"TB incidence has been used for over a century as a main indicator of TB burden, along with TB mortality. The indicator allows comparisons over time and between countries. Improvement in the quality of TB surveillance data result in reduced uncertainty about indicator values.
+Routine surveillance data provide a good basis for estimates of incidence in countries where the majority of incident cases are treated and notified to WHO. Where the proportion of cases notified is consistent over time (even if it is low), trends in incidence can be judged from trends in notified cases. Where TB control efforts change over time it is difficult to differentiate between changes in incidence and changes in the proportion of cases notified. A national surveillance system is an integral part of good TB control, and one of the components of DOTS, which forms the core of the Stop TB Strategy. As surveillance improves in countries implementing the strategy, so will estimates of the incidence of TB."
+Data collection process,"National Tuberculosis (TB) Programmes report their annual TB data to WHO every year between April and June using a standardized web-based data reporting system maintained at WHO. The system includes real-time checks for data consistency. Estimates of TB burden are prepared in July-August and shared with countries for review in August-September; revisions are made based on feedback received. In selected countries with new survey data, estimates are updated separately during the year. The final set of estimates is reviewed in WHO before publication in October, for compliance with specific international standards and harmonization of breakdowns for age and sex groups."
+Preferred data sources,Surveillance systems
+Other data sources,Specific population surveys
+Expected frequency of data collection,Annual
+Data providers,"National TB Programmes, Ministries of Health"
+Data compilers,World Health Organization (WHO)

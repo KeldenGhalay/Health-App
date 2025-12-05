@@ -1,0 +1,51 @@
+Property,Value
+Name,Annual mean concentrations of fine particulate matter (PM2.5) in urban areas (µg/m3)
+Short name,"Fine particulate matter (PM2.5) (µg/m3), annual mean concentrations in urban areas"
+Indicator unique identifier,F810947
+Indicator codes,"SDGPM25
+                                                     4674"
+Also known as,"SDG indicator 11.6.2
+                                                     Mean particulates (PM2.5)"
+SDG Goal,11.6.2 - Fine particulate matter
+Short description,Mean annual concentration of fine suspended particles of less than 2.5 microns in diameter.
+Definition,The mean annual concentration of fine suspended particles of less than 2.5 microns in diameters is a common measure of air pollution. The mean is a population-weighted average for urban population in a country.
+Direction of progress,Figures decreasing over time demonstrate progress through the reduction of air pollution.
+Framework classifications,Environmental factors
+Indicator status,Actively collected and reported
+Most recent data update,8 January 2024
+Next expected data update,2024/2025
+Expected frequency of data release,Every 2 - 3 years
+Publishing institution,WHO_HQ_HEP_ECH_AQH
+Data type,Float
+Unit of measure,Annual mean PM2.5 concentration in urban areas
+Value display label,µg/m3
+Short value display label,µg/m3
+Subject of measure,METROLOGY
+Subject of measure sentiment,Negative
+Preferred semantic value type,Rate
+Confidence intervals,Yes
+Provenance,Official Estimate
+First available data,31 December 2009
+Most recent available data,31 December 2018
+Data completeness,Complete data
+Temporal coverage,2009 - 2018
+Periodicity,Annual
+Spatial coverage,World
+Granularity,National
+Population,Urban areas
+"Number of countries, areas and territories",195
+Geographic entities and groups,"Afghanistan, Albania, Algeria, Andorra, Angola, Antigua and Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia (Plurinational State of), Bosnia and Herzegovina, Botswana, Brazil, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Central African Republic, Chad, Chile, China, Colombia, Comoros, Congo, Cook Islands, Costa Rica, Côte d'Ivoire, Croatia, Cuba, Cyprus, Czechia, Democratic People's Republic of Korea, Democratic Republic of the Congo, Denmark, Djibouti, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, Greece, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hungary, Iceland, India, Indonesia, Iran (Islamic Republic of), Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Latvia, Lebanon, Lesotho, Liberia, Libya, Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Mauritania, Mauritius, Mexico, Micronesia (Federated States of), Monaco, Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nauru, Nepal, Netherlands (the), New Zealand, Nicaragua, Niger, Nigeria, Niue, North Macedonia, Norway, occupied Palestinian territory, including east Jerusalem, Oman, Pakistan, Palau, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Republic of Korea, Republic of Moldova, Romania, Russian Federation, Rwanda, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Samoa, San Marino, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Sudan, Spain, Sri Lanka, Sudan, Suriname, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Thailand, Timor-Leste, Togo, Tonga, Trinidad and Tobago, Tunisia, Türkiye, Turkmenistan, Tuvalu, Uganda, Ukraine, United Arab Emirates, United Kingdom of Great Britain and Northern Ireland, United Republic of Tanzania, United States of America, Uruguay, Uzbekistan, Vanuatu, Venezuela (Bolivarian Republic of), Viet Nam, Yemen, Zambia, Zimbabwe"
+Time intervals,"2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019"
+Method of measurement,"Concentration of PM2.5 are regularly measured from fixed-site,  population-oriented monitors located within the metropolitan areas. High-quality measurements of PM concentration from all the monitors in the metropolitan area can be averaged to develop a single estimate."
+Method of estimation aggregates,"The regional and global aggregates are population-weighted figures of the national estimates.
+Although PM is measured at many thousands of locations throughout the world, the amount of monitors in different geographical areas vary, with some areas having little or no monitoring. In order to produce global estimates at high resolution (0.1◦ grid‐cells), additional data is required."
+Process of validation,"Draft estimates are reviewed with Member States through a WHO country consultation process and SDG focal points every time new data are generated. In addition, the methods and data are published in a peer-reviewed journal."
+Rationale,"Air pollution consists of many pollutants, among other particulate matter. These particles are able to penetrate deeply into the respiratory tract and therefore constitute a risk for health by increasing mortality from respiratory infections and diseases, lung cancer, and selected cardiovascular diseases."
+Denominator,"While the data quality available for urban/rural population is generally good for high-income countries, it can be relatively poor for some low- and middle income areas. Furthermore, the definition of urban/rural may greatly vary by country."
+Institutional mandate,"The World Health Organization (WHO) is the Custodian Agency or co-Custodian Agency for reporting on several SDG indicators, including indicator 11.6.2, annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted))."
+Notes,"The PM2.5 concentrations are geographically classified according to the 2021 United Nations Statistics Division (UNSD) Degree of Urbanization classification: cities, towns and rural areas. Data is also provided for urban (aggregation of cities and towns) and all (aggregation of cities, towns and rural) areas."
+Data collection process,"Data collection process for ground measurements include official reporting from countries to WHO (after request), and web searches. Measurements of PM10 or PM2.5 from official national/sub-national reports and websites or reported by regional networks such as Clean Air Asia for Asia and the European Environment Agency for Europe or data from UN agencies, development agencies, articles from peer reviewed journals and ground measurements are compiled in the framework of the Global Burden of Disease Project."
+Preferred data sources,"Sources of data include ground measurements from monitoring networks, collected for 6,000 cities and localities (WHO, 2022) around the world, satellite remote sensing, population estimates, topography, information on local monitoring networks and measures of specific contributors of air pollution (WHO, 2022)."
+Expected frequency of data collection,Ongoing
+Data providers,"Ministry of Health, Ministry of the Environment"
+Data compilers,World Health Organization (WHO)

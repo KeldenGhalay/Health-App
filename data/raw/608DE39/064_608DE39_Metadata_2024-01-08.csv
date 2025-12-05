@@ -1,0 +1,39 @@
+Property,Value
+Name,Age-standardized prevalence of hypertension among adults aged 30 to 79 years (%)
+Short name,Age-standardized prevalence of hypertension among adults aged 30-79 years (%)
+Indicator unique identifier,608DE39
+Indicator codes,NCD_HYP_PREVALENCE_A
+Also known as,"Adult hypertension
+                                                     Hypertension prevalence"
+Short description,Prevalence of hypertension among adults aged 30 to 79.
+Definition,"The prevalence of hypertension (defined as having systolic blood pressure ≥140 mmHg, diastolic blood pressure ≥90 mmHg, or taking medication for hypertension) among adults aged 30 to 79."
+Direction of progress,Figures decreasing over time demonstrates progress.
+Framework classifications,Outcome
+Indicator status,Actively collected and reported
+Most recent data update,8 January 2024
+Publishing institution,WHO
+Data type,Float
+Unit of measure,Percentage of adults (30-79) with hypertnesion
+Value display label,% of 30 - 79 year olds
+Short value display label,%
+Subject of measure,PREVALENCE
+Subject of measure sentiment,Negative
+Preferred semantic value type,Per cent
+Confidence intervals,Yes
+Provenance,Official Estimate
+Calculation type,"Adjusted
+                                                    Predicted"
+First available data,31 December 1989
+Most recent available data,31 December 2018
+Data completeness,Complete data
+Temporal coverage,1989 - 2018
+Periodicity,Annual
+Spatial coverage,World
+Granularity,National
+Population,Adults 30 - 79 years of age who have hypertension or are taking medication for hypertension.
+Sample size,1201 population based studies that included measured blood pressure and data on blood pressure treatment in 104 million individuals aged 30 - 79 years
+"Number of countries, areas and territories",195
+Geographic entities and groups,"Afghanistan, Albania, Algeria, Andorra, Angola, Antigua and Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia (Plurinational State of), Bosnia and Herzegovina, Botswana, Brazil, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Central African Republic, Chad, Chile, China, Colombia, Comoros, Congo, Cook Islands, Costa Rica, Côte d'Ivoire, Croatia, Cuba, Cyprus, Czechia, Democratic People's Republic of Korea, Democratic Republic of the Congo, Denmark, Djibouti, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, Greece, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hungary, Iceland, India, Indonesia, Iran (Islamic Republic of), Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Latvia, Lebanon, Lesotho, Liberia, Libya, Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Mauritania, Mauritius, Mexico, Micronesia (Federated States of), Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nauru, Nepal, Netherlands (the), New Zealand, Nicaragua, Niger, Nigeria, Niue, North Macedonia, Norway, occupied Palestinian territory, including east Jerusalem, Oman, Pakistan, Palau, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Puerto Rico, Qatar, Republic of Korea, Republic of Moldova, Romania, Russian Federation, Rwanda, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Samoa, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Sudan, Spain, Sri Lanka, Sudan, Suriname, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Thailand, Timor-Leste, Togo, Tokelau, Tonga, Trinidad and Tobago, Tunisia, Türkiye, Turkmenistan, Tuvalu, Uganda, Ukraine, United Arab Emirates, United Kingdom of Great Britain and Northern Ireland, United Republic of Tanzania, United States of America, Uruguay, Uzbekistan, Vanuatu, Venezuela (Bolivarian Republic of), Viet Nam, Yemen, Zambia, Zimbabwe"
+Time intervals,"1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019"
+Preferred data sources,"Population-based surveys
+Surveillance systems"

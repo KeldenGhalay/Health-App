@@ -1,0 +1,50 @@
+Property,Value
+Name,Suicide mortality rate (per 100 000 population)
+Short name,Suicide mortality rate (per 100 000 population)
+Indicator unique identifier,16BBF41
+Indicator codes,SDGSUICIDE
+Also known as,SDG indicator 3.4.2
+SDG Goal,3.4.2 – Suicide
+Short description,"Number of suicide deaths in a year, divided by the population and multiplied by 100 000."
+Definition,"The number of suicide deaths in a year, divided by the population and multiplied by 100 000."
+Direction of progress,Figures decreasing over time demonstrates progress.
+Framework classifications,Outcome
+Indicator status,Actively collected and reported
+Most recent data update,8 January 2024
+Next expected data update,2024/2025
+Expected frequency of data release,Every 2 - 3 years
+Publishing institution,WHO
+Data type,Float
+Unit of measure,Number of suicide deaths in a given year
+Value display label,deaths per 100 000
+Short value display label,deaths per 100k
+Subject of measure,MORTALITY
+Subject of measure sentiment,Negative
+Preferred semantic value type,Rate per 100000
+Confidence intervals,Yes
+Provenance,Official Estimate
+First available data,31 December 1999
+Most recent available data,31 December 2018
+Data completeness,Complete data
+Temporal coverage,1999 - 2018
+Periodicity,Annual
+Spatial coverage,World
+Granularity,National
+"Number of countries, areas and territories",183
+Geographic entities and groups,"Afghanistan, Albania, Algeria, Angola, Antigua and Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia (Plurinational State of), Bosnia and Herzegovina, Botswana, Brazil, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Central African Republic, Chad, Chile, China, Colombia, Comoros, Congo, Costa Rica, Côte d'Ivoire, Croatia, Cuba, Cyprus, Czechia, Democratic People's Republic of Korea, Democratic Republic of the Congo, Denmark, Djibouti, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, Greece, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hungary, Iceland, India, Indonesia, Iran (Islamic Republic of), Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Latvia, Lebanon, Lesotho, Liberia, Libya, Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Mauritania, Mauritius, Mexico, Micronesia (Federated States of), Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nepal, Netherlands (the), New Zealand, Nicaragua, Niger, Nigeria, North Macedonia, Norway, Oman, Pakistan, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Republic of Korea, Republic of Moldova, Romania, Russian Federation, Rwanda, Saint Lucia, Saint Vincent and the Grenadines, Samoa, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Sudan, Spain, Sri Lanka, Sudan, Suriname, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Thailand, Timor-Leste, Togo, Tonga, Trinidad and Tobago, Tunisia, Türkiye, Turkmenistan, Uganda, Ukraine, United Arab Emirates, United Kingdom of Great Britain and Northern Ireland, United Republic of Tanzania, United States of America, Uruguay, Uzbekistan, Vanuatu, Venezuela (Bolivarian Republic of), Viet Nam, Yemen, Zambia, Zimbabwe"
+Time intervals,"2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019"
+Numerator,Number of suicide deaths in a year
+Denominator,population
+Method of estimation aggregates,"Country estimates of number of deaths by cause, along with corresponding population estimates, are summed to obtain regional and global aggregates."
+Process of validation,The number of suicide deaths were country consulted as part of the full set of causes of death prior to the release.
+Rationale,"Measuring how many people die each year and why they died is one of the most important means – along with gauging how diseases and injuries are affecting people  – for assessing the effectiveness of a country’s health system. Cause-of-death statistics help health authorities determine their focus for public health actions.
+Mental disorders occur in all regions and cultures of the world. The most prevalent of these disorders are depression and anxiety, which are estimated to affect nearly 1 in 10 people. At its worst, depression can lead to suicide. In 2019, there were over 700,000 estimated suicide deaths worldwide."
+Denominator,"The complete recording of suicide deaths in death-registration systems requires good linkages with coronial and police systems, but can be seriously impeded by stigma, social and legal considerations, and delays in determining cause of death. Less than one half of WHO Member States have well-functioning death-registration systems that record causes of death."
+Institutional mandate,"According to Article 64 of its constitution, WHO is mandated to request each Member State to provide statistics on mortality. Furthermore, the WHO Nomenclature Regulations of 1967 affirms the importance of compiling and publishing statistics of mortality and morbidity in comparable form. Member States started to report mortality data to WHO since the early fifties and this reporting activity is continuing until today."
+Comments,"High-income countries have systems in place for collecting information on causes of death in the population. Many low- and middle-income countries do not have such systems, and the numbers of deaths from specific causes have to be estimated from incomplete data. Improvements in producing high quality cause-of-death data are crucial for improving health and reducing preventable deaths in these countries. Please refer to the Global Health Estimates methods document for more details, including confidence intervals for comparisons of age-specific rates across countries or time."
+Data collection process,WHO conducts a formal country consultation process before releasing its cause-of-death estimates.
+Preferred data sources,"The preferred data source is death registration systems with complete coverage and medical certification of cause of death, coded using the international classification of diseases (ICD). The ICD-10 codes for suicide are: X60-X84, Y87.0."
+Other data sources,"Other possible data sources include household surveys with verbal autopsy, sample or sentinel registration systems, special studies and surveillance systems."
+Expected frequency of data collection,WHO annually requests tabulated death registration data (including all causes of death) from Member States. Countries may submit annual cause-of-death statistics to WHO on an ongoing basis.
+Data providers,National statistics offices and/or ministries of health.
+Data compilers,World Health Organization (WHO)

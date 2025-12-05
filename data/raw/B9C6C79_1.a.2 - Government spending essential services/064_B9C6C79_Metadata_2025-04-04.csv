@@ -1,0 +1,41 @@
+Property,Value
+Name,Domestic general government health expenditure (GGHE-D) as percentage of general government expenditure (GGE) (%)
+Short name,Domestic general government health expenditure (GGHE-D) as percentage of general government expenditure (GGE) (%)
+Indicator unique identifier,B9C6C79
+Indicator codes,GHED_GGHE-DGGE_SHA2011
+Also known as,"SDG indicator 1.a.2
+                                                     GGHE-D%GGE"
+SDG Goal,1.a.2 - Government spending essential services
+Short description,"Share of general government expenditures funding current health expenditures.
+(SDG 1.a.2)"
+Definition,The share of general government expenditures (GGE) funding current health expenditures (CHE).
+Direction of progress,Figures increasing over time demonstrates progress.
+Indicator status,Actively collected and reported
+Most recent data update,4 April 2025
+Publishing institution,WHO_HQ_UHL_HGF_HEF
+Data type,Float
+Unit of measure,Percentage of general government expenditure spent on health
+Value display label,% spent on health
+Short value display label,%
+Subject of measure,METROLOGY
+Subject of measure sentiment,Positive
+Preferred semantic value type,Percentage of population
+Confidence intervals,No
+Provenance,Official Estimate
+Calculation type,Unadjusted
+First available data,31 December 1999
+Most recent available data,31 December 2019
+Data completeness,Complete data
+Temporal coverage,1999 - 2019
+Periodicity,Annual
+Spatial coverage,World
+Granularity,National
+"Number of countries, areas and territories",192
+Geographic entities and groups,"Afghanistan, Albania, Algeria, Andorra, Angola, Antigua and Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia (Plurinational State of), Bosnia and Herzegovina, Botswana, Brazil, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Central African Republic, Chad, Chile, China, Colombia, Comoros, Congo, Cook Islands, Costa Rica, Côte d'Ivoire, Croatia, Cuba, Cyprus, Czechia, Democratic Republic of the Congo, Denmark, Djibouti, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, Greece, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hungary, Iceland, India, Indonesia, Iran (Islamic Republic of), Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Latvia, Lebanon, Lesotho, Liberia, Libya, Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Mauritania, Mauritius, Mexico, Micronesia (Federated States of), Monaco, Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nauru, Nepal, Netherlands (the), New Zealand, Nicaragua, Niger, Nigeria, Niue, North Macedonia, Norway, Oman, Pakistan, Palau, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Republic of Korea, Republic of Moldova, Romania, Russian Federation, Rwanda, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Samoa, San Marino, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, South Africa, South Sudan, Spain, Sri Lanka, Sudan, Suriname, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Thailand, Timor-Leste, Togo, Tonga, Trinidad and Tobago, Tunisia, Türkiye, Turkmenistan, Tuvalu, Uganda, Ukraine, United Arab Emirates, United Kingdom of Great Britain and Northern Ireland, United Republic of Tanzania, United States of America, Uruguay, Uzbekistan, Vanuatu, Venezuela (Bolivarian Republic of), Viet Nam, Yemen, Zambia, Zimbabwe"
+Time intervals,"2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020"
+Method of measurement,(FS.1 Transfers from government domestic revenue allocated to health purposes + FS.3 Social insurance contributions) / General government expenditure (GGE)
+Numerator,(FS.1 Transfers from government domestic revenue allocated to health purposes + FS.3 Social insurance contributions)
+Denominator,General government expenditure (GGE)
+Process of validation,"The UNESCO Institute for Statistics shares all indicator values and notes on methodology with National Statistical Offices, Ministries of Education, or other relevant agencies in individual countries for their review, feedback and validation before the publication of the data."
+Rationale,The share of domestic general government health expenditures of general government expenditure indicates the priority of the government to spend on health from own domestic public resources. It expresses this priority by comparing the size of current public health expenditures relative to the total size of government expenditure.
+Comments,"FS.1, HF.3, etc. correspond to the codes of health expenditure categories from the International Classification of Health Accounts (ICHA-SHA2011). The complete list of ICHA codes is available in the SHA 2011 document: A system of health accounts 2011 and in the Excel file: International classification of health accounts (SHA 2011 series) . (See links below)"

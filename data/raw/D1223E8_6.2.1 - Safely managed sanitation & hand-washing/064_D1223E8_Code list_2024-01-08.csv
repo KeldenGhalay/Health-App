@@ -1,0 +1,8 @@
+TERM_SET,TERM_KEY,TERM_NAME_MAIN,TERM_DESC_MAIN
+DIM_DEG_URB,URBAN,Urban,Urban areas consist of cities plus towns and semi-dense areas.
+DIM_DEG_URB,RURAL,Rural,Thinly populated area.
+DIM_DEG_URB,CITY,Cities,Densely populated area.
+DIM_DEG_URB,TOWN,Towns,"Settlement. May be small, medium, or large."
+DIM_DEG_URB,TOTAL,Total,Used for expressing totals.
+DIM_DEG_URB,NULL_U,Unknown,Used for attributed statistics when the degree of urbanization is unknown.
+DIM_DEG_URB,NULL_Z,Not applicable,Used when DIM_DEG_URB is not applicable to the subject being measured.
