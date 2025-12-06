@@ -157,8 +157,8 @@ elif menu == "Train Model Summary":
     model = RandomForestClassifier()
     model.fit(X, y)
     os.makedirs("models", exist_ok=True)
-    joblib.dump(model, "models/trained_ncd_model.pkl")
-    imps = pd.DataFrame({"Feature": X.columns, "Importance": model.feature_importances_}).sort_values(by="Importance", ascending=False)
+    joblib.dump({"model": model, "features": list(X.columns)}, "models/trained_ncd_model.pkl")
+    imps = pd.DataFrame({"Feature": list(X.columns), "Importance": model.feature_importances_}).sort_values(by="Importance", ascending=False)
     st.bar_chart(imps.set_index("Feature"))
     st.dataframe(imps)
     st.write("Factors used: age, sex, smoking, physical_activity, bmi, systolic_bp, fasting_glucose, cholesterol, family_history")
@@ -167,8 +167,16 @@ elif menu == "Predict NCD":
     st.header("Predict NCD")
     model_path = "models/trained_ncd_model.pkl"
     if os.path.exists(model_path):
-        model = joblib.load(model_path)
-        feature_names = None
+        obj = joblib.load(model_path)
+        if hasattr(obj, "predict_proba"):
+            model = obj
+            feature_names = list(getattr(model, "feature_names_in_", []))
+        elif isinstance(obj, dict) and "model" in obj:
+            model = obj["model"]
+            feature_names = obj.get("features", list(getattr(model, "feature_names_in_", [])))
+        else:
+            model = obj
+            feature_names = list(getattr(model, "feature_names_in_", []))
     else:
         df = generate_ncd_risk_data(1200)
         X = df[["age","smoking","physical_activity","bmi","systolic_bp","fasting_glucose","cholesterol","family_history","sex"]]
@@ -176,7 +184,7 @@ elif menu == "Predict NCD":
         y = df["has_ncd"]
         model = RandomForestClassifier()
         model.fit(X, y)
-        feature_names = X.columns.tolist()
+        feature_names = list(X.columns)
     age = st.slider("Age", 30, 70, 45)
     sex = st.selectbox("Sex", ["Male","Female"])
     smoking = st.selectbox("Smoking", ["No","Yes"]) == "Yes"
@@ -199,13 +207,17 @@ elif menu == "Predict NCD":
             "sex": sex,
         }
         X = pd.DataFrame([row])
-        X = pd.get_dummies(X, columns=["sex"], drop_first=True)
-        if feature_names is None:
-            feature_names = X.columns.tolist()
-        for f in feature_names:
+        if "sex" in X.columns:
+            X["sex_Male"] = 1 if sex == "Male" else 0
+            X = X.drop(columns=["sex"])
+        train_feature_names = list(getattr(model, "feature_names_in_", []))
+        if not train_feature_names:
+            train_feature_names = feature_names or list(X.columns)
+        for f in train_feature_names:
             if f not in X.columns:
                 X[f] = 0
-        X = X[feature_names]
+        X = X[train_feature_names]
+        X = X.astype(float)
         proba = model.predict_proba(X)
         classes = list(model.classes_)
         idx = classes.index("Yes") if "Yes" in classes else 1
