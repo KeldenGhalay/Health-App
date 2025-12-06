@@ -7,15 +7,15 @@ A Python-based data science workflow and Streamlit app for exploring Bhutan heal
 - `data/processed/` Outputs from notebooks and scripts (ignored by Git)
 - `notebooks/`
   - `01_data_exploration.ipynb` Load and clean raw data → `cleaned.csv`
-  - `02_feature_engineering.ipynb` Basic feature scaling → `features.csv`
-  - `03_modeling.ipynb` Train RandomForest → `models/trained_model.pkl`
+  - `02_feature_engineering.ipynb` Build NCD trend features (YoY change, rolling mean)
+  - `03_modeling.ipynb` Compute KPIs and visualize trends (no ML)
 - `src/`
   - `data_loader.py` Load/validate/save processed datasets
   - `preprocessing.py` Minimal cleaning and encoding helpers
   - `train_model.py` CLI training script (classification/regression)
   - `scan_raw.py` Summarize all WHO datasets under `data/raw/`
 - `app/`
-  - `streamlit_app.py` Streamlit dashboard and prediction UI
+  - `streamlit_app.py` Streamlit dashboard focused on NCD premature mortality
 - `models/` Saved model artifacts (ignored by Git)
 - `starter.py` Simple pipeline runner from a single raw CSV
 - `requirements.txt` Python dependencies
@@ -37,21 +37,20 @@ A Python-based data science workflow and Streamlit app for exploring Bhutan heal
 - Open each notebook and run cells in order.
 - Outputs are written to `data/processed/`.
 
-## Training
-- Train via notebook `03_modeling.ipynb` or CLI:
-  - `python src/train_model.py --data data/processed/cleaned.csv --target stress_level --task classification --out models/trained_model.pkl`
+## Optional Training (not required)
+- Generic CLI (regression on NCD rate):
+  - `python src/train_model.py --data data/processed/cleaned.csv --target RATE_PER_100_N --task regression --out models/trained_model.pkl`
 - `starter.py` pipeline:
-  - `python starter.py --raw "data/raw/<folder>/<Dataset_...>.csv" --target stress_level --task classification`
+  - `python starter.py --raw "data/raw/<folder>/<Dataset_...>.csv"`
 
 ## Streamlit App
 - Run locally: `streamlit run app/streamlit_app.py`
 - Pages:
   - Raw Data Explorer: browse any dataset file, preview, dtypes, missingness, correlations
-  - Dataset Overview: show processed/synthetic dataset, summary stats
-  - Visualizations: heatmap, line, bar, area, histogram, scatter
-  - Train Model Summary: feature importances when available
-  - Predict Stress Level: sliders and prediction with trained/in-memory model
-- If `data/processed/cleaned.csv` is absent, the app generates a synthetic dataset and trains in-memory to keep the UI functional.
+  - NCD Overview: preview, summary, years and sex categories, average rate
+  - Trends: line chart of `RATE_PER_100_N` by year and sex, change KPI
+  - Sex Comparison: average rates by sex; per-year area chart
+  - Uncertainty Bands: ribbon chart using `RATE_PER_100_NL` and `RATE_PER_100_NU`
 
 ## Deploy to Streamlit Cloud
 1) Push to GitHub:

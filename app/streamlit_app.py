@@ -1,55 +1,36 @@
 import os
-import numpy as np
 import pandas as pd
 import streamlit as st
-import joblib
-from sklearn.ensemble import RandomForestClassifier
 import matplotlib.pyplot as plt
 import seaborn as sns
+import glob
 
-st.set_page_config(page_title="Bhutan Healthcare Analytics", layout="wide")
-st.title("Bhutan Healthcare Data Science Project")
+st.set_page_config(page_title="Bhutan NCD Premature Mortality (30–70)", layout="wide")
+st.title("Bhutan NCD Premature Mortality (Ages 30–70)")
 
 @st.cache_resource
-def load_data():
-    path = "data/processed/cleaned.csv"
-    if os.path.exists(path):
+def find_ncd_dataset():
+    candidates = glob.glob(os.path.join("data", "raw", "**", "*1F96863*Dataset_*.csv"), recursive=True)
+    if candidates:
+        return candidates[0]
+    # fallback: any dataset file
+    any_ds = glob.glob(os.path.join("data", "raw", "**", "*Dataset_*.csv"), recursive=True)
+    return any_ds[0] if any_ds else None
+
+@st.cache_resource
+def load_ncd_data(path: str | None = None) -> pd.DataFrame | None:
+    if path and os.path.exists(path):
         return pd.read_csv(path)
-    np.random.seed(42)
-    size = 600
-    data = pd.DataFrame({
-        "age": np.random.randint(15, 60, size),
-        "sleep_hours": np.random.uniform(4, 10, size),
-        "social_interaction": np.random.randint(0, 7, size),
-        "work_stress": np.random.randint(1, 10, size),
-        "physical_activity": np.random.randint(0, 6, size),
-        "mood_score": np.random.randint(1, 10, size)
-    })
-    score = (data["work_stress"] * 0.5) + (10 - data["mood_score"]) + (6 - data["physical_activity"])
-    conditions = [(score < 8), ((score >= 8) & (score < 14)), (score >= 14)]
-    choices = ["low", "medium", "high"]
-    data["stress_level"] = np.select(conditions, choices, default="medium")
-    return data
+    auto = find_ncd_dataset()
+    if auto:
+        return pd.read_csv(auto)
+    return None
 
-@st.cache_resource
-def load_or_train_model(data: pd.DataFrame):
-    path = "models/trained_model.pkl"
-    if os.path.exists(path):
-        return joblib.load(path)
-    X = data.drop("stress_level", axis=1)
-    y = data["stress_level"]
-    model = RandomForestClassifier()
-    model.fit(X, y)
-    return model
-
-data = load_data()
-model = load_or_train_model(data)
-
-menu = st.sidebar.selectbox("Navigate", ["Raw Data Explorer", "Dataset Overview", "Visualizations", "Train Model Summary", "Predict Stress Level"])
+data = load_ncd_data()
+menu = st.sidebar.selectbox("Navigate", ["Raw Data Explorer", "NCD Overview", "Trends", "Sex Comparison", "Uncertainty Bands"]) 
 
 if menu == "Raw Data Explorer":
     st.header("Raw Data Explorer")
-    import glob, os
     dataset_files = glob.glob(os.path.join("data", "raw", "**", "*Dataset_*.csv"), recursive=True)
     if not dataset_files:
         st.info("No WHO dataset CSVs found in data/raw.")
@@ -68,8 +49,6 @@ if menu == "Raw Data Explorer":
             num = rdf.select_dtypes(include=["number"])
             if not num.empty:
                 st.subheader("Correlation Heatmap")
-                import seaborn as sns
-                import matplotlib.pyplot as plt
                 corr = num.corr()
                 plt.figure(figsize=(8, 6))
                 sns.heatmap(corr, annot=False, cmap="viridis")
@@ -77,78 +56,62 @@ if menu == "Raw Data Explorer":
         except Exception as e:
             st.error(f"Failed to read {sel}: {e}")
 
-elif menu == "Dataset Overview":
-    st.header("Dataset Overview")
-    st.dataframe(data.head())
-    st.header("Summary of Data")
-    st.dataframe(data.describe())
-    if "stress_level" in data.columns:
-        st.header("stress_level")
-        st.bar_chart(data["stress_level"].value_counts())
-
-elif menu == "Visualizations":
-    st.header("Visualizations")
-    viz_type = st.selectbox("Choose chart type:", ["Correlation Heatmap", "Line Chart", "Bar Chart", "Area Chart", "Histogram", "Scatter Plot"])
-    if viz_type == "Correlation Heatmap":
-        st.subheader("Correlation Heatmap")
-        numeric_data = data.select_dtypes(include=["number"])
-        corr = numeric_data.corr()
-        plt.figure(figsize=(8, 6))
-        sns.heatmap(corr, annot=True, cmap="coolwarm")
-        st.pyplot()
-    elif viz_type == "Line Chart":
-        cols = data.columns.tolist()
-        if "stress_level" in cols:
-            st.line_chart(data.drop("stress_level", axis=1))
-        else:
-            st.line_chart(data)
-    elif viz_type == "Bar Chart":
-        feature = st.selectbox("Select feature:", data.columns[:-1])
-        st.bar_chart(data[feature])
-    elif viz_type == "Area Chart":
-        cols = data.columns.tolist()
-        if "stress_level" in cols:
-            st.area_chart(data.drop("stress_level", axis=1))
-        else:
-            st.area_chart(data)
-    elif viz_type == "Histogram":
-        feature = st.selectbox("Select numeric feature:", data.select_dtypes(include=["number"]).columns)
-        plt.hist(data[feature], bins=20)
-        st.pyplot()
-    elif viz_type == "Scatter Plot":
-        numeric_cols = data.select_dtypes(include=["number"]).columns
-        x_axis = st.selectbox("X-axis:", numeric_cols)
-        y_axis = st.selectbox("Y-axis:", numeric_cols)
-        plt.scatter(data[x_axis], data[y_axis])
-        plt.xlabel(x_axis)
-        plt.ylabel(y_axis)
-        st.pyplot()
-
-elif menu == "Train Model Summary":
-    st.header("Model Training Summary")
-    if "stress_level" in data.columns:
-        X = data.drop("stress_level", axis=1)
-        if hasattr(model, "feature_importances_"):
-            importance_df = pd.DataFrame({"Feature": X.columns, "Importance": model.feature_importances_}).sort_values(by="Importance", ascending=False)
-            st.bar_chart(importance_df.set_index("Feature"))
-            st.dataframe(importance_df)
-        else:
-            st.write("Model does not expose feature importances.")
+elif menu == "NCD Overview":
+    st.header("NCD Premature Mortality Overview")
+    if data is None:
+        st.warning("No dataset found. Place the NCD dataset under data/raw.")
     else:
-        st.write("Target column not found.")
+        st.write("Preview")
+        st.dataframe(data.head())
+        st.write("Summary")
+        st.dataframe(data.describe(include="all"))
+        if {"DIM_TIME", "Sex", "RATE_PER_100_N"}.issubset(set(data.columns)):
+            years = sorted(data["DIM_TIME"].unique())
+            sexes = sorted(data["Sex"].unique())
+            st.write(f"Years: {years[0]}–{years[-1]} ({len(years)} values)")
+            st.write(f"Sex categories: {', '.join(sexes)}")
+            overall_mean = data["RATE_PER_100_N"].mean()
+            st.metric("Average premature NCD mortality (per 100, ages 30–70)", f"{overall_mean:.1f}")
 
-elif menu == "Predict Stress Level":
-    st.header("Predict Stress Level")
-    if "stress_level" in data.columns:
-        age = st.slider("Age", 15, 60, 25)
-        sleep_hours = st.slider("Sleep Hours", 4.0, 10.0, 7.0)
-        social_interaction = st.slider("Social Interaction", 0, 7, 3)
-        work_stress = st.slider("Work/Study Stress", 1, 10, 5)
-        physical_activity = st.slider("Physical Activity", 0, 6, 2)
-        mood_score = st.slider("Mood Score", 1, 10, 6)
-        if st.button("Predict"):
-            features = np.array([[age, sleep_hours, social_interaction, work_stress, physical_activity, mood_score]])
-            prediction = model.predict(features)[0]
-            st.success(f"Predicted Stress Level: {prediction}")
+elif menu == "Trends":
+    st.header("Trends Over Time")
+    if data is None or not {"DIM_TIME", "Sex", "RATE_PER_100_N"}.issubset(set(data.columns)):
+        st.warning("Dataset missing required columns.")
     else:
-        st.write("Target column not found.")
+        pivot = data.pivot_table(index="DIM_TIME", columns="Sex", values="RATE_PER_100_N")
+        st.line_chart(pivot)
+        first_year = pivot.index.min()
+        last_year = pivot.index.max()
+        if "Total" in pivot.columns:
+            delta = pivot.loc[last_year, "Total"] - pivot.loc[first_year, "Total"]
+            st.metric("Change in total rate (last vs first year)", f"{delta:+.1f}")
+        else:
+            for sex in pivot.columns:
+                delta = pivot.loc[last_year, sex] - pivot.loc[first_year, sex]
+                st.metric(f"Change ({sex})", f"{delta:+.1f}")
+
+elif menu == "Sex Comparison":
+    st.header("Sex Comparison")
+    if data is None or not {"Sex", "RATE_PER_100_N", "DIM_TIME"}.issubset(set(data.columns)):
+        st.warning("Dataset missing required columns.")
+    else:
+        avg = data.groupby("Sex")["RATE_PER_100_N"].mean().sort_values(ascending=False)
+        st.bar_chart(avg)
+        st.write("Rates by year and sex")
+        pivot = data.pivot_table(index="DIM_TIME", columns="Sex", values="RATE_PER_100_N")
+        st.area_chart(pivot)
+
+elif menu == "Uncertainty Bands":
+    st.header("Uncertainty Bands")
+    if data is None or not {"DIM_TIME", "Sex", "RATE_PER_100_N", "RATE_PER_100_NL", "RATE_PER_100_NU"}.issubset(set(data.columns)):
+        st.warning("Dataset missing required columns.")
+    else:
+        sex = st.selectbox("Select sex", sorted(data["Sex"].unique()))
+        d = data[data["Sex"] == sex].sort_values("DIM_TIME")
+        plt.figure(figsize=(8, 5))
+        plt.plot(d["DIM_TIME"], d["RATE_PER_100_N"], label="Estimate", color="#1f77b4")
+        plt.fill_between(d["DIM_TIME"], d["RATE_PER_100_NL"], d["RATE_PER_100_NU"], color="#1f77b4", alpha=0.2, label="Uncertainty")
+        plt.xlabel("Year")
+        plt.ylabel("Rate per 100 (ages 30–70)")
+        plt.legend()
+        st.pyplot()

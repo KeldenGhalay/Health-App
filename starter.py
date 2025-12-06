@@ -1,28 +1,32 @@
 import argparse
-import os
-import pandas as pd
+import glob
 from src.data_loader import load_csv, validate_dataframe, save_processed
 from src.preprocessing import basic_clean
-from src.train_model import train
 
-def run(raw_csv: str | None = None, target: str = "stress_level", task: str = "classification"):
+def find_default_raw() -> str | None:
+    candidates = glob.glob("data/raw/**/*1F96863*Dataset_*.csv", recursive=True)
+    if candidates:
+        return candidates[0]
+    any_ds = glob.glob("data/raw/**/*Dataset_*.csv", recursive=True)
+    return any_ds[0] if any_ds else None
+
+def run(raw_csv: str | None = None):
     if raw_csv is None:
-        return
+        raw_csv = find_default_raw()
+        if raw_csv is None:
+            print("No raw dataset found under data/raw")
+            return
     df = load_csv(raw_csv)
     df = validate_dataframe(df)
     df = basic_clean(df)
     out = save_processed(df, "cleaned.csv")
-    if target not in df.columns:
-        return
-    train(str(out), target, task, "models/trained_model.pkl")
+    print(out)
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--raw", required=False)
-    parser.add_argument("--target", default="stress_level")
-    parser.add_argument("--task", choices=["classification", "regression"], default="classification")
     args = parser.parse_args()
-    run(args.raw, args.target, args.task)
+    run(args.raw)
 
 if __name__ == "__main__":
     main()

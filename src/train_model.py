@@ -4,7 +4,7 @@ import pandas as pd
 import joblib
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 
-def train(data_path: str = "data/processed/cleaned.csv", target: str = "stress_level", task: str = "classification", out_path: str = "models/trained_model.pkl") -> str:
+def train(data_path: str = "data/processed/cleaned.csv", target: str = "RATE_PER_100_N", task: str = "regression", out_path: str = "models/trained_model.pkl") -> str:
     df = pd.read_csv(data_path)
     X = df.drop(columns=[target])
     y = df[target]
@@ -20,8 +20,8 @@ def train(data_path: str = "data/processed/cleaned.csv", target: str = "stress_l
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--data", default="data/processed/cleaned.csv")
-    parser.add_argument("--target", default="stress_level")
-    parser.add_argument("--task", choices=["classification", "regression"], default="classification")
+    parser.add_argument("--target", default="RATE_PER_100_N")
+    parser.add_argument("--task", choices=["classification", "regression"], default="regression")
     parser.add_argument("--out", default="models/trained_model.pkl")
     args = parser.parse_args()
     path = train(args.data, args.target, args.task, args.out)
