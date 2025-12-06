@@ -1,9 +1,12 @@
 import os
+import numpy as np
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 import glob
+import joblib
+from sklearn.ensemble import RandomForestClassifier
 
 st.set_page_config(page_title="Bhutan NCD Premature Mortality (30–70)", layout="wide")
 st.title("Bhutan NCD Premature Mortality (Ages 30–70)")
@@ -26,8 +29,47 @@ def load_ncd_data(path: str | None = None) -> pd.DataFrame | None:
         return pd.read_csv(auto)
     return None
 
+@st.cache_resource
+def generate_ncd_risk_data(n: int = 1000) -> pd.DataFrame:
+    rng = np.random.default_rng(42)
+    age = rng.integers(30, 71, n)
+    sex = rng.choice(["Male","Female"], n)
+    smoking = rng.integers(0, 2, n)
+    physical_activity = rng.integers(0, 7, n)
+    bmi = rng.uniform(18.0, 40.0, n)
+    systolic_bp = rng.uniform(100.0, 180.0, n)
+    fasting_glucose = rng.uniform(80.0, 200.0, n)
+    cholesterol = rng.uniform(150.0, 300.0, n)
+    family_history = rng.integers(0, 2, n)
+    sex_male = (sex == "Male").astype(int)
+    score = (
+        0.03 * (age - 30)
+        + 0.8 * smoking
+        - 0.2 * physical_activity
+        + 0.05 * (bmi - 25)
+        + 0.02 * (systolic_bp - 120)
+        + 0.02 * (fasting_glucose - 100)
+        + 0.01 * (cholesterol - 200)
+        + 0.7 * family_history
+        + 0.2 * sex_male
+    )
+    p = 1.0 / (1.0 + np.exp(-score / 3.0))
+    has_ncd = np.where(p >= 0.5, "Yes", "No")
+    return pd.DataFrame({
+        "age": age,
+        "sex": sex,
+        "smoking": smoking,
+        "physical_activity": physical_activity,
+        "bmi": bmi,
+        "systolic_bp": systolic_bp,
+        "fasting_glucose": fasting_glucose,
+        "cholesterol": cholesterol,
+        "family_history": family_history,
+        "has_ncd": has_ncd,
+    })
+
 data = load_ncd_data()
-menu = st.sidebar.selectbox("Navigate", ["Raw Data Explorer", "NCD Overview", "Trends", "Sex Comparison", "Uncertainty Bands"]) 
+menu = st.sidebar.selectbox("Navigate", ["Raw Data Explorer", "NCD Overview", "Trends", "Sex Comparison", "Uncertainty Bands", "Train Model Summary", "Predict NCD"]) 
 
 if menu == "Raw Data Explorer":
     st.header("Raw Data Explorer")
@@ -43,16 +85,6 @@ if menu == "Raw Data Explorer":
             dtypes_df = pd.DataFrame({"Column": rdf.columns, "Dtype": rdf.dtypes.astype(str)})
             st.subheader("Column Types")
             st.dataframe(dtypes_df)
-            st.subheader("Missingness by Column")
-            miss = rdf.isna().mean().sort_values(ascending=False)
-            st.bar_chart(miss)
-            num = rdf.select_dtypes(include=["number"])
-            if not num.empty:
-                st.subheader("Correlation Heatmap")
-                corr = num.corr()
-                plt.figure(figsize=(8, 6))
-                sns.heatmap(corr, annot=False, cmap="viridis")
-                st.pyplot()
         except Exception as e:
             st.error(f"Failed to read {sel}: {e}")
 
@@ -115,3 +147,69 @@ elif menu == "Uncertainty Bands":
         plt.ylabel("Rate per 100 (ages 30–70)")
         plt.legend()
         st.pyplot()
+
+elif menu == "Train Model Summary":
+    st.header("Train Model Summary")
+    df = generate_ncd_risk_data(1200)
+    X = df[["age","smoking","physical_activity","bmi","systolic_bp","fasting_glucose","cholesterol","family_history","sex"]]
+    X = pd.get_dummies(X, columns=["sex"], drop_first=True)
+    y = df["has_ncd"]
+    model = RandomForestClassifier()
+    model.fit(X, y)
+    os.makedirs("models", exist_ok=True)
+    joblib.dump(model, "models/trained_ncd_model.pkl")
+    imps = pd.DataFrame({"Feature": X.columns, "Importance": model.feature_importances_}).sort_values(by="Importance", ascending=False)
+    st.bar_chart(imps.set_index("Feature"))
+    st.dataframe(imps)
+    st.write("Factors used: age, sex, smoking, physical_activity, bmi, systolic_bp, fasting_glucose, cholesterol, family_history")
+
+elif menu == "Predict NCD":
+    st.header("Predict NCD")
+    model_path = "models/trained_ncd_model.pkl"
+    if os.path.exists(model_path):
+        model = joblib.load(model_path)
+        feature_names = None
+    else:
+        df = generate_ncd_risk_data(1200)
+        X = df[["age","smoking","physical_activity","bmi","systolic_bp","fasting_glucose","cholesterol","family_history","sex"]]
+        X = pd.get_dummies(X, columns=["sex"], drop_first=True)
+        y = df["has_ncd"]
+        model = RandomForestClassifier()
+        model.fit(X, y)
+        feature_names = X.columns.tolist()
+    age = st.slider("Age", 30, 70, 45)
+    sex = st.selectbox("Sex", ["Male","Female"])
+    smoking = st.selectbox("Smoking", ["No","Yes"]) == "Yes"
+    physical_activity = st.slider("Physical Activity (days/wk)", 0, 6, 2)
+    bmi = st.slider("BMI", 18.0, 40.0, 26.0)
+    systolic_bp = st.slider("Systolic BP", 90.0, 180.0, 125.0)
+    fasting_glucose = st.slider("Fasting Glucose", 70.0, 200.0, 105.0)
+    cholesterol = st.slider("Cholesterol", 150.0, 300.0, 210.0)
+    family_history = st.selectbox("Family History", ["No","Yes"]) == "Yes"
+    if st.button("Predict"):
+        row = {
+            "age": age,
+            "smoking": 1 if smoking else 0,
+            "physical_activity": physical_activity,
+            "bmi": bmi,
+            "systolic_bp": systolic_bp,
+            "fasting_glucose": fasting_glucose,
+            "cholesterol": cholesterol,
+            "family_history": 1 if family_history else 0,
+            "sex": sex,
+        }
+        X = pd.DataFrame([row])
+        X = pd.get_dummies(X, columns=["sex"], drop_first=True)
+        if feature_names is None:
+            feature_names = X.columns.tolist()
+        for f in feature_names:
+            if f not in X.columns:
+                X[f] = 0
+        X = X[feature_names]
+        proba = model.predict_proba(X)
+        classes = list(model.classes_)
+        idx = classes.index("Yes") if "Yes" in classes else 1
+        p_yes = float(proba[0][idx])
+        pred = "Yes" if p_yes >= 0.5 else "No"
+        st.metric("Predicted NCD", pred)
+        st.metric("Probability (Yes)", f"{p_yes:.2f}")

@@ -51,6 +51,8 @@ A Python-based data science workflow and Streamlit app for exploring Bhutan heal
   - Trends: line chart of `RATE_PER_100_N` by year and sex, change KPI
   - Sex Comparison: average rates by sex; per-year area chart
   - Uncertainty Bands: ribbon chart using `RATE_PER_100_NL` and `RATE_PER_100_NU`
+  - Train Model Summary: trains a synthetic NCD risk classifier and shows feature importances
+  - Predict NCD: input factors (age, sex, smoking, physical activity, BMI, BP, glucose, cholesterol, family history) → prediction and probability
 
 ## Deploy to Streamlit Cloud
 1) Push to GitHub:
